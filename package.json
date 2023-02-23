@@ -1,0 +1,25 @@
+{
+  "name": "design-tokens",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "transform:global": "token-transformer tokens.json tokens/global.json global",
+    "transform:semantic": "token-transformer tokens.json tokens/semantic.json global,semantic,semantic global",
+    "transform:semantic-dark": "token-transformer tokens.json tokens/semantic-dark.json global,semantic-dark,semantic global",
+    "transform": "npm run transform:global && npm run transform:semantic && npm run transform:semantic-dark"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/publy-korea/design-tokens.git"
+  },
+  "author": "Jaesung Kim",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/publy-korea/design-tokens/issues"
+  },
+  "homepage": "https://github.com/publy-korea/design-tokens#readme",
+  "devDependencies": {
+    "token-transformer": "0.0.30"
+  }
+}
