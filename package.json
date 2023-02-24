@@ -7,7 +7,9 @@
     "transform:global": "token-transformer tokens.json tokens/global.json global",
     "transform:semantic": "token-transformer tokens.json tokens/semantic.json global,semantic,semantic global",
     "transform:semantic-dark": "token-transformer tokens.json tokens/semantic-dark.json global,semantic-dark,semantic global",
-    "transform": "npm run transform:global && npm run transform:semantic && npm run transform:semantic-dark"
+    "transform": "npm run transform:global && npm run transform:semantic && npm run transform:semantic-dark",
+    "style-dictionary": "style-dictionary build --config ./style-dictionary.config.js",
+    "tailwind:init": "tailwindcss init presets.config.js"
   },
   "repository": {
     "type": "git",
@@ -20,6 +22,10 @@
   },
   "homepage": "https://github.com/publy-korea/design-tokens#readme",
   "devDependencies": {
+    "@types/lodash.set": "^4.3.7",
+    "lodash.set": "^4.3.2",
+    "style-dictionary": "^3.7.2",
+    "tailwindcss": "^3.2.7",
     "token-transformer": "0.0.30"
   }
 }
