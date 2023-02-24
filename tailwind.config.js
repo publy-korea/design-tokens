@@ -4,7 +4,9 @@ const spacing = require('./build/tailwind/semantic/spacing.json');
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   theme: {
-    colors,
-    spacing,
+    extend: {
+      colors,
+      spacing,
+    }
   },
 }
