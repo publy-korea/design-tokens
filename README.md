@@ -62,3 +62,13 @@ module.exports = {
 };
 ```
 
+## (유지보수하는 엔지니어를 위한) 이 저장소에 대한 설명
+
+### 파일
+
+* `tokens.json`: 피그마 플러그인에서 내보내어진 토큰 파일입니다 (디자인 토큰의 첫번째 단계)
+* `tokens/global.json`: [tokens-transformer](https://www.npmjs.com/package/token-transformer)에 의해 [style-dictionary](https://www.npmjs.com/package/style-dictionary) 가 읽어들일 수 있는 형태로 변환된 파일입니다. (명령어: `npm run transform`)
+* `build/{platform}/{theme}/{type}.json`: [style-dictionary](https://www.npmjs.com/package/style-dictionary) 에 의해 tailwind.config.js 의 theme에 넘겨줄 수 있는 형태로 변환된 파일입니다. (명령어: `npm run style-dictionary`)
+  * 예시: `build/tailwind/global/colors.json`
+* `tailwind.config.js`: 웹/앱 프로젝트에서 테일윈드 프리셋으로 사용 가능한 테일윈드 설정 파일입니다.
+
