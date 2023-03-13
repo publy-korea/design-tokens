@@ -1,45 +1,26 @@
-const set = require('lodash.set');
+const setWith = require('lodash.setwith');
 
 /** @type {import('style-dictionary/types/Config').Config} */
 module.exports = {
-  source: ["tokens/semantic.json"],
+  source: ["tokens/global.json"],
   format: {
     createTailwindTheme: ({ dictionary }) => {
       const theme = {}
       dictionary.allTokens.forEach(token => {
-        set(theme, token.path.join('.'), token.value);
+        setWith(theme, token.path.join('.'), token.value, Object);
       });
       return JSON.stringify(theme, undefined, 2);
     }
   },
-  transform: {
-    'sizes/px': {
-      type: 'value',
-      matcher: (prop) => {
-        // You can be more specific here if you only want 'em' units for font sizes
-        return ["fontSizes", "spacing", "borderRadius", "borderWidth", "sizing"].includes(prop.attributes.category);
-      },
-      transformer: (prop) => {
-        // You can also modify the value here if you want to convert pixels to ems
-        return parseFloat(prop.original.value) + 'px';
-      },
-    }
-  },
   platforms: {
     tailwind: {
-      transforms: ["attribute/cti", "name/cti/kebab", "sizes/px"],
-      buildPath: 'build/tailwind/semantic/',
+      transforms: ["attribute/cti", "name/cti/kebab"],
+      buildPath: 'build/tailwind/global/',
       files: [{
         filter: (token) => {
-          return token.attributes.type === 'color'
+          return token.attributes.category === 'color'
         },
         destination: 'colors.json',
-        format: "createTailwindTheme"
-      }, {
-        filter: (token) => {
-          return token.attributes.type === 'spacing'
-        },
-        destination: 'spacing.json',
         format: "createTailwindTheme"
       }]
     },
