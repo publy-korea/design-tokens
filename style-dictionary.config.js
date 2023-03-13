@@ -18,7 +18,7 @@ module.exports = {
       buildPath: 'build/tailwind/global/',
       files: [{
         filter: (token) => {
-          return token.attributes.category === 'color'
+          return token.type === 'color'
         },
         destination: 'colors.json',
         format: "createTailwindTheme"
