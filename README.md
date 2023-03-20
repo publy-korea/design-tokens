@@ -34,18 +34,13 @@ export default function Component() {
 
 ### 웹 (테일윈드)
 
-먼저 서브모듈을 장착해야 합니다. 프로젝트의 .gitmodules를 열고 다음 내용을 추가합니다.
-
-```
-[submodule "src/design-tokens"]
-	path = src/design-tokens
-	url = git@github.com:publy-korea/design-tokens.git
-```
-
-다음 명령어를 실행합니다.
+먼저 서브모듈을 장착하기 위해 다음 명령어를 실행합니다.
 
 ```sh
-git submodule init # 처음에만 실행
+# 이 둘은 처음에만 실행
+git submodule add git@github.com:publy-korea/design-tokens.git src/design-tokens
+git submodule init
+
 git submodule update
 ```
 
