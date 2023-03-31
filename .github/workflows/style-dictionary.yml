@@ -1,0 +1,22 @@
+name: 스타일 딕셔너리 생성
+on: [push]
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v2.4.0
+      # Install dependencies
+      - run: npm install
+      # Transform Figma Tokens JSON to something Style Dictionary can read, run Style Dictionary and later run Tailwind
+      - run: npm run transform && npm run style-dictionary
+      # Add files that were created during a run, e.g. created files from style dictionary or token-transformer.
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: 피그마 토큰으로부터 스타일 딕셔너리 생성
