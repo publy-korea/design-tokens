@@ -2,7 +2,7 @@ name: Bitbucket 저장소로 미러링
 on: [push, delete]
 
 jobs:
-  to_gitlab:
+  to_bitbucket:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
