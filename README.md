@@ -64,7 +64,7 @@ module.exports = {
 Bitbucket pipeline이 이 깃허브 저장소에 대한 읽기 권한을 가지고 있지 않아서 그렇습니다. 
 
 1. https://bitbucket.org/publyproduct/{저장소이름}/admin/addon/admin/pipelines/ssh-keys 로 들어가서 ssh 공개 키를 복사하세요.
-2. [design-tokens 배포 키 설정 페이지](https://github.com/publy-korea/design-tokens/settings/keys) 에 해당 키를 추가해주시면 됩니다.
+2. [design-tokens 액세스 키 설정 페이지](https://bitbucket.org/publyproduct/design-tokens/admin/access-keys/) 에 해당 키를 추가해주시면 됩니다.
 
 ## (유지보수하는 엔지니어를 위한) 이 저장소에 대한 설명
 
