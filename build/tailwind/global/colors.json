@@ -4,7 +4,12 @@
       "brand": "#ed6653",
       "bold": "#0f172a",
       "subtle": "#334155",
-      "subtlest": "#475569"
+      "subtlest": "#475569",
+      "inverse": "#ffffff",
+      "button": {
+        "secondary": "#007871",
+        "primary": "#334155"
+      }
     },
     "background": {
       "default": "#ffffff",
@@ -13,11 +18,11 @@
       "button": {
         "primary": {
           "bold": "#334155",
-          "subtle": "#e2e8f0"
+          "subtle": "#f1f5f9"
         },
         "secondary": {
-          "bold": "#45ada6",
-          "subtle": "#99f6e4"
+          "bold": "#007871",
+          "subtle": "#f0fdfa"
         }
       }
     },

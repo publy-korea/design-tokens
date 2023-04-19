@@ -20,6 +20,20 @@
         "value": "#475569",
         "type": "color",
         "description": "메타데이터, 플레이스홀더나 도움 텍스트와 같은 곳에 쓰입니다."
+      },
+      "inverse": {
+        "value": "#ffffff",
+        "type": "color"
+      },
+      "button": {
+        "secondary": {
+          "value": "#007871",
+          "type": "color"
+        },
+        "primary": {
+          "value": "#334155",
+          "type": "color"
+        }
       }
     },
     "background": {
@@ -42,17 +56,17 @@
             "type": "color"
           },
           "subtle": {
-            "value": "#e2e8f0",
+            "value": "#f1f5f9",
             "type": "color"
           }
         },
         "secondary": {
           "bold": {
-            "value": "#45ada6",
+            "value": "#007871",
             "type": "color"
           },
           "subtle": {
-            "value": "#99f6e4",
+            "value": "#f0fdfa",
             "type": "color"
           }
         }
