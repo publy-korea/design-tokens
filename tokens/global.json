@@ -16,10 +16,15 @@
         "type": "color",
         "description": "secoundary에 속한 정보를 보여주는 텍스트의 경우에 쓰입니다. 레이블, 캡션 정보, 부제목과 같습니다."
       },
-      "subtlest": {
-        "value": "#475569",
+      "subtler": {
+        "value": "#64748b",
         "type": "color",
-        "description": "메타데이터, 플레이스홀더나 도움 텍스트와 같은 곳에 쓰입니다."
+        "description": "optional에 속한 정보를 보여주는 텍스트의 경우에 쓰입니다."
+      },
+      "subtlest": {
+        "value": "#94a3b8",
+        "type": "color",
+        "description": "강조되지 않아도 되는 정보 혹은 텍스트의 disabled, inabled 상태를 표현할 때 사용합니다."
       },
       "inverse": {
         "value": "#ffffff",
@@ -50,24 +55,68 @@
         "type": "color"
       },
       "button": {
+        "subtle": {
+          "value": "#64748b",
+          "type": "color",
+          "description": "button의 primary, secondary의 completed 상태를 표현하는 outlined 컬러입니다."
+        },
+        "subtler": {
+          "value": "#cbd5e1",
+          "type": "color",
+          "description": "button의 primary, secondary의 disabled 상태를 표현하는 outlined 컬러입니다."
+        },
+        "disabled": {
+          "value": "#f1f5f9",
+          "type": "color",
+          "description": "button의 primary, secondary의 disabled 상태를 표현하는 bg 컬러입니다."
+        },
+        "completed": {
+          "value": "#e2e8f0",
+          "type": "color",
+          "description": "button의 primary, secondary의 completed,hover 상태를 표현하는 bg 컬러입니다."
+        },
         "primary": {
+          "subtlest": {
+            "value": "#f1f5f9",
+            "type": "color",
+            "description": "button의 primary의 tinted 타입을 나타내는 bg컬러입니다."
+          },
+          "hover": {
+            "value": "#e2e8f0",
+            "type": "color",
+            "description": "button의 primary의 hover 상태를 표현하는 bg 컬러입니다."
+          },
           "bold": {
             "value": "#334155",
-            "type": "color"
+            "type": "color",
+            "description": "button의 primary의 solid 타입을 나타내는 bg컬러입니다."
           },
-          "subtle": {
-            "value": "#f1f5f9",
-            "type": "color"
+          "bolder": {
+            "value": "#1e293b",
+            "type": "color",
+            "description": "button의 primary의 solid 타입에서 hover 상태를 나타내는 bg 컬러입니다."
           }
         },
         "secondary": {
+          "subtlest": {
+            "value": "#f0fdfa",
+            "type": "color",
+            "description": "button의 secondary의 tinted 타입을 나타내는 bg컬러입니다."
+          },
           "bold": {
             "value": "#007871",
-            "type": "color"
+            "type": "color",
+            "description": "button의 secondary의 Solid 타입을 나타내는 bg컬러입니다."
           },
-          "subtle": {
-            "value": "#f0fdfa",
-            "type": "color"
+          "bolder": {
+            "value": "#0e6371",
+            "type": "color",
+            "description": "button의 secondary의 solid 타입에서 hover 상태를 나타내는 bg 컬러입니다."
+          },
+          "hover": {
+            "value": "#99f6e4",
+            "type": "color",
+            "description": "button의 secondary의 hover 상태를 표현하는 bg 컬러입니다."
           }
         }
       }

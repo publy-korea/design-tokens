@@ -4,7 +4,8 @@
       "brand": "#ed6653",
       "bold": "#0f172a",
       "subtle": "#334155",
-      "subtlest": "#475569",
+      "subtler": "#64748b",
+      "subtlest": "#94a3b8",
       "inverse": "#ffffff",
       "button": {
         "secondary": "#007871",
@@ -16,13 +17,21 @@
       "selected": "#f1f5f9",
       "hover": "#f8fafc",
       "button": {
+        "subtle": "#64748b",
+        "subtler": "#cbd5e1",
+        "disabled": "#f1f5f9",
+        "completed": "#e2e8f0",
         "primary": {
+          "subtlest": "#f1f5f9",
+          "hover": "#e2e8f0",
           "bold": "#334155",
-          "subtle": "#f1f5f9"
+          "bolder": "#1e293b"
         },
         "secondary": {
+          "subtlest": "#f0fdfa",
           "bold": "#007871",
-          "subtle": "#f0fdfa"
+          "bolder": "#0e6371",
+          "hover": "#99f6e4"
         }
       }
     },
