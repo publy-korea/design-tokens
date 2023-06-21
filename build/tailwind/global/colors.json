@@ -6,6 +6,7 @@
       "subtle": "#334155",
       "subtler": "#64748b",
       "subtlest": "#94a3b8",
+      "placeholder": "#94a3b8",
       "inverse": "#ffffff",
       "button": {
         "secondary": "#007871",
