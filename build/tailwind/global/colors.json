@@ -22,6 +22,7 @@
         "subtler": "#cbd5e1",
         "disabled": "#f1f5f9",
         "completed": "#e2e8f0",
+        "hover": "#e2e8f0",
         "primary": {
           "subtlest": "#f1f5f9",
           "hover": "#e2e8f0",
