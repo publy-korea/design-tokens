@@ -5,33 +5,41 @@
       "bold": "#0f172a",
       "subtle": "#334155",
       "subtler": "#64748b",
+      "placeholder": "#94a3b8",
       "subtlest": "#94a3b8",
       "inverse": "#ffffff",
       "button": {
         "secondary": "#007871",
-        "primary": "#334155"
+        "primary": "#334155",
+        "completed": "#64748b",
+        "disabled": "#94a3b8"
       }
     },
     "background": {
-      "default": "#ffffff",
       "selected": "#f1f5f9",
       "hover": "#f8fafc",
       "button": {
-        "subtle": "#64748b",
-        "subtler": "#cbd5e1",
         "disabled": "#f1f5f9",
         "completed": "#e2e8f0",
         "primary": {
-          "subtlest": "#f1f5f9",
-          "hover": "#e2e8f0",
-          "bold": "#334155",
-          "bolder": "#1e293b"
+          "tint": {
+            "inabled": "#f1f5f9",
+            "hover": "#e2e8f0"
+          },
+          "bold": {
+            "hover": "#1e293b",
+            "inabled": "#334155"
+          }
         },
         "secondary": {
-          "subtlest": "#f0fdfa",
-          "bold": "#007871",
-          "bolder": "#0e6371",
-          "hover": "#99f6e4"
+          "tint": {
+            "inabled": "#f0fdfa",
+            "hover": "#d5f4f2"
+          },
+          "bold": {
+            "inabled": "#007871",
+            "hover": "#0e6371"
+          }
         }
       }
     },
