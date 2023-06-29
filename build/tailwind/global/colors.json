@@ -7,6 +7,7 @@
       "subtler": "#64748b",
       "placeholder": "#94a3b8",
       "subtlest": "#94a3b8",
+      "placeholder": "#94a3b8",
       "inverse": "#ffffff",
       "button": {
         "secondary": "#007871",
@@ -21,6 +22,7 @@
       "button": {
         "disabled": "#f1f5f9",
         "completed": "#e2e8f0",
+        "hover": "#e2e8f0",
         "primary": {
           "tint": {
             "inabled": "#f1f5f9",
