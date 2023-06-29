@@ -31,11 +31,6 @@
         "type": "color",
         "description": "강조되지 않아도 되는 정보 혹은 텍스트의 disabled, inabled 상태를 표현할 때 사용합니다."
       },
-      "placeholder": {
-        "value": "#94a3b8",
-        "type": "color",
-        "description": "text에서 Placeholder를 표현하는 색상입니다."
-      },
       "inverse": {
         "value": "#ffffff",
         "type": "color"
@@ -48,7 +43,7 @@
         },
         "primary": {
           "value": "#334155",
-          "type": "color"
+          "type": "color",
           "description": "button의 primary에 속하는 텍스트 색상입니다."
         },
         "completed": {
