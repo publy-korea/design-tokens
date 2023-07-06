@@ -37,7 +37,7 @@
       },
       "button": {
         "secondary": {
-          "value": "#007871",
+          "value": "#0F766E",
           "type": "color",
           "description": "button의 secondary에 속하는 텍스트 색상입니다."
         },
@@ -120,11 +120,11 @@
           },
           "bold": {
             "inabled": {
-              "value": "#007871",
+              "value": "#0F766E",
               "type": "color"
             },
             "hover": {
-              "value": "#0e6371",
+              "value": "#115E59",
               "type": "color"
             }
           }
@@ -138,48 +138,6 @@
     "black": {
       "value": "#000000",
       "type": "color"
-    },
-    "gray": {
-      "100": {
-        "value": "#f8fafc",
-        "type": "color"
-      },
-      "200": {
-        "value": "#e2e8f0",
-        "type": "color"
-      },
-      "300": {
-        "value": "#cbd5e1",
-        "type": "color"
-      },
-      "400": {
-        "value": "#cbd5e1",
-        "type": "color"
-      },
-      "500": {
-        "value": "#94a3b8",
-        "type": "color"
-      },
-      "600": {
-        "value": "#94a3b8",
-        "type": "color"
-      },
-      "700": {
-        "value": "#64748b",
-        "type": "color"
-      },
-      "800": {
-        "value": "#475569",
-        "type": "color"
-      },
-      "900": {
-        "value": "#0f172a",
-        "type": "color"
-      },
-      "950": {
-        "value": "#0f172a",
-        "type": "color"
-      }
     },
     "coral": {
       "50": {
@@ -199,7 +157,7 @@
         "type": "color"
       },
       "400": {
-        "value": "#f39b8e",
+        "value": "#F39B8E",
         "type": "color"
       },
       "500": {
@@ -237,27 +195,27 @@
         "type": "color"
       },
       "300": {
-        "value": "#5eead4",
+        "value": "#5EEAD4",
         "type": "color"
       },
       "400": {
-        "value": "#9fd8d4",
+        "value": "#2DD4BF",
         "type": "color"
       },
       "500": {
-        "value": "#6dc5bf",
+        "value": "#14B8A6",
         "type": "color"
       },
       "600": {
-        "value": "#45ada6",
+        "value": "#0D9488",
         "type": "color"
       },
       "700": {
-        "value": "#007871",
+        "value": "#0F766E",
         "type": "color"
       },
       "800": {
-        "value": "#0e6371",
+        "value": "#115E59",
         "type": "color"
       },
       "900": {
