@@ -24,21 +24,21 @@
         "hover": "#e2e8f0",
         "primary": {
           "tint": {
-            "inabled": "#f1f5f9",
+            "enabled": "#f1f5f9",
             "hover": "#e2e8f0"
           },
           "bold": {
             "hover": "#1e293b",
-            "inabled": "#334155"
+            "enabled": "#334155"
           }
         },
         "secondary": {
           "tint": {
-            "inabled": "#f0fdfa",
+            "enabled": "#f0fdfa",
             "hover": "#d5f4f2"
           },
           "bold": {
-            "inabled": "#0F766E",
+            "enabled": "#0F766E",
             "hover": "#115E59"
           }
         }
