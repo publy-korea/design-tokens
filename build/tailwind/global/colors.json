@@ -9,54 +9,49 @@
       "placeholder": "#94a3b8",
       "inverse": "#ffffff",
       "button": {
-        "secondary": "#007871",
-        "primary": "#334155"
+        "secondary": "#0F766E",
+        "primary": "#334155",
+        "completed": "#64748b",
+        "disabled": "#94a3b8"
       }
     },
     "background": {
-      "default": "#ffffff",
       "selected": "#f1f5f9",
       "hover": "#f8fafc",
       "button": {
-        "subtle": "#64748b",
-        "subtler": "#cbd5e1",
         "disabled": "#f1f5f9",
         "completed": "#e2e8f0",
         "hover": "#e2e8f0",
         "primary": {
-          "subtlest": "#f1f5f9",
-          "hover": "#e2e8f0",
-          "bold": "#334155",
-          "bolder": "#1e293b"
+          "tint": {
+            "enabled": "#f1f5f9",
+            "hover": "#e2e8f0"
+          },
+          "bold": {
+            "hover": "#1e293b",
+            "enabled": "#334155"
+          }
         },
         "secondary": {
-          "subtlest": "#f0fdfa",
-          "bold": "#007871",
-          "bolder": "#0e6371",
-          "hover": "#99f6e4"
+          "tint": {
+            "enabled": "#f0fdfa",
+            "hover": "#d5f4f2"
+          },
+          "bold": {
+            "enabled": "#0F766E",
+            "hover": "#115E59"
+          }
         }
       }
     },
     "white": "#ffffff",
     "black": "#000000",
-    "gray": {
-      "100": "#f8fafc",
-      "200": "#e2e8f0",
-      "300": "#cbd5e1",
-      "400": "#cbd5e1",
-      "500": "#94a3b8",
-      "600": "#94a3b8",
-      "700": "#64748b",
-      "800": "#475569",
-      "900": "#0f172a",
-      "950": "#0f172a"
-    },
     "coral": {
       "50": "#fdf4f3",
       "100": "#ffedee",
       "200": "#fdd1cb",
       "300": "#f7b4aa",
-      "400": "#f39b8e",
+      "400": "#F39B8E",
       "500": "#ef7b6a",
       "600": "#ed6653",
       "700": "#e1432e",
@@ -67,12 +62,12 @@
       "50": "#f0fdfa",
       "100": "#d5f4f2",
       "200": "#99f6e4",
-      "300": "#5eead4",
-      "400": "#9fd8d4",
-      "500": "#6dc5bf",
-      "600": "#45ada6",
-      "700": "#007871",
-      "800": "#0e6371",
+      "300": "#5EEAD4",
+      "400": "#2DD4BF",
+      "500": "#14B8A6",
+      "600": "#0D9488",
+      "700": "#0F766E",
+      "800": "#115E59",
       "900": "#134e4a"
     },
     "red": {
