@@ -26,6 +26,19 @@ export default function Component() {
 }
 ```
 
+### 자동완성(IntelliSense) 지원
+
+[Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss) 라는 Visual Studio Code 확장을 사용하면 디자인 토큰 기반의 테일윈드 클래스가 자동완성됩니다. 
+
+### 업데이트 방법
+
+새로 추가되거나, 수정된 디자인 토큰을 활용하려면 장착된 design-tokens 서브모듈을 업데이트해야 합니다. 
+
+```sh
+git submodule update --remote src/design-tokens
+```
+
+
 ### 앱 (리액트 네이티브 인라인 스타일) 예시
 
 준비 중.
