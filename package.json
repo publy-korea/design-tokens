@@ -3,6 +3,10 @@
   "version": "0.1.0",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "node": "18.16.x",
+    "npm": "9.5.x"
+  },
   "scripts": {
     "transform:global": "token-transformer tokens.json tokens/global.json Global",
     "transform": "npm run transform:global",
@@ -19,6 +23,7 @@
   },
   "homepage": "https://github.com/publy-korea/design-tokens#readme",
   "devDependencies": {
+    "@tsconfig/recommended": "^1.0.2",
     "@types/lodash.set": "^4.3.7",
     "@types/lodash.setwith": "^4.3.7",
     "lodash.set": "^4.3.2",
