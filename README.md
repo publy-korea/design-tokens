@@ -99,7 +99,11 @@ Bitbucket pipeline이 이 깃허브 저장소에 대한 읽기 권한을 가지�
 
 * `tokens.json`: 피그마 플러그인에서 내보내어진 토큰 파일입니다 (디자인 토큰의 첫번째 단계)
 * `tokens/global.json`: [tokens-transformer](https://www.npmjs.com/package/token-transformer)에 의해 [style-dictionary](https://www.npmjs.com/package/style-dictionary) 가 읽어들일 수 있는 형태로 변환된 파일입니다. (명령어: `npm run transform`)
-* `build/{platform}/{theme}/{type}.json`: [style-dictionary](https://www.npmjs.com/package/style-dictionary) 에 의해 tailwind.config.js 의 theme에 넘겨줄 수 있는 형태로 변환된 파일입니다. (명령어: `npm run style-dictionary`)
-  * 예시: `build/tailwind/global/colors.json`
-* `tailwind.config.js`: 웹/앱 프로젝트에서 테일윈드 프리셋으로 사용 가능한 테일윈드 설정 파일입니다.
+* `tailwind/{theme}/{type}.json`: [style-dictionary](https://www.npmjs.com/package/style-dictionary) 에 의해 tailwind.config.js 의 theme에 넘겨줄 수 있는 형태로 변환된 파일입니다. (명령어: `npm run style-dictionary`)
+  * 예시: `tailwind/global/colors.json`
+  * **직접 수정해서는 안됩니다.**
+* `react-native/{theme}/{type}.ts`: [style-dictionary](https://www.npmjs.com/package/style-dictionary) 에 의해 `react-native/{theme}/styles.ts` 가 임포트할 수 있는 형태로 변환된 파일입니다. (명령어: `npm run style-dictionary`)
+  * 예시: `react-native/global/colors.ts`
+  * **직접 수정해서는 안됩니다.**
+* `react-native/{theme}/styles.ts`: `react-native/{theme}/{type}.ts` 를 임포트해서 [republic](https://bitbucket.org/publyproduct/react-native-republic) 과 호환되는 스타일 오브젝트로 만든 파일입니다.
 
