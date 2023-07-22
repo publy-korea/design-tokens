@@ -1,3 +1,8 @@
+/**
+ * 직접 수정하지 마세요
+ * Sat Jul 22 2023 16:33:29 GMT+0900 (대한민국 표준시)에 생성됨
+ */
+
 export default {
   "colorTextBrand": "#ed6653",
   "colorTextBold": "#0f172a",

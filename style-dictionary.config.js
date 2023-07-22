@@ -26,7 +26,9 @@ module.exports = {
         theme[keys.join('')] = token.value;
       });
 
-      return `export default ${JSON.stringify(theme, undefined, 2)} as const`;
+      const header = `/**\n * 직접 수정하지 마세요\n * ${new Date()}에 생성됨\n */`
+
+      return `${header}\n\nexport default ${JSON.stringify(theme, undefined, 2)} as const`;
     }
   },
   platforms: {
