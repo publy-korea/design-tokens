@@ -2,7 +2,7 @@
 
 ## (디자이너, 엔지니어를 위한) 사용법
 
-### 웹 (테일윈드 기반) 예시
+### 웹 (테일윈드 기반)
 
 ```jsonc
 {
@@ -21,14 +21,28 @@
 
 ```typescript
 export default function Component() {
-  // div의 배경색이 #ffffff 이 됩니다. build/tailwind/global/colors.json 파일을 참조하세요.
+  // div의 배경색이 #ffffff 이 됩니다. tailwind/global/colors.json 파일을 참조하세요.
   return <div className="tw-bg-color-background-default">hello world</div>
 }
 ```
 
-### 자동완성(IntelliSense) 지원
+#### 자동완성(IntelliSense) 지원
 
 [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss) 라는 Visual Studio Code 확장을 사용하면 디자인 토큰 기반의 테일윈드 클래스가 자동완성됩니다. 
+
+### 앱 (리액트 네이티브 기반)
+```typescript
+import {bg} from 'src/design-tokens/react-native/styles'
+
+export default function Component() {
+  // div의 배경색이 #ffffff 이 됩니다. react-native/global/styles.ts 파일을 참조하세요.
+  return <View styles={[bg.white]} />
+}
+```
+
+#### 자동완성(IntelliSense) 지원
+
+타입스크립트 타입이 선언되어 있으므로, 자동완성이 지원됩니다.
 
 ### 업데이트 방법
 
