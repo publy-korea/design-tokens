@@ -129,6 +129,12 @@
             }
           }
         }
+      },
+      "badge": {
+        "unread": {
+          "value": "#ef4444",
+          "type": "color"
+        }
       }
     },
     "white": {
