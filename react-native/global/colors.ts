@@ -1,6 +1,6 @@
 /**
  * 직접 수정하지 마세요
- * Sat Jul 22 2023 16:33:29 GMT+0900 (대한민국 표준시)에 생성됨
+ * Fri Aug 04 2023 09:14:31 GMT+0000 (Coordinated Universal Time)에 생성됨
  */
 
 export default {
@@ -28,6 +28,7 @@ export default {
   "colorBackgroundButtonSecondaryTintHover": "#d5f4f2",
   "colorBackgroundButtonSecondaryBoldEnabled": "#0F766E",
   "colorBackgroundButtonSecondaryBoldHover": "#115E59",
+  "colorBackgroundBadgeUnread": "#ef4444",
   "colorWhite": "#ffffff",
   "colorBlack": "#000000",
   "colorCoral50": "#fdf4f3",
