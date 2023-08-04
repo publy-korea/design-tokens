@@ -2,7 +2,7 @@
 
 ## (디자이너, 엔지니어를 위한) 사용법
 
-### 웹 (테일윈드 기반) 예시
+### 웹 (테일윈드 기반)
 
 ```jsonc
 {
@@ -21,14 +21,28 @@
 
 ```typescript
 export default function Component() {
-  // div의 배경색이 #ffffff 이 됩니다. build/tailwind/global/colors.json 파일을 참조하세요.
+  // div의 배경색이 #ffffff 이 됩니다. tailwind/global/colors.json 파일을 참조하세요.
   return <div className="tw-bg-color-background-default">hello world</div>
 }
 ```
 
-### 자동완성(IntelliSense) 지원
+#### 자동완성(IntelliSense) 지원
 
 [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss) 라는 Visual Studio Code 확장을 사용하면 디자인 토큰 기반의 테일윈드 클래스가 자동완성됩니다. 
+
+### 앱 (리액트 네이티브 기반)
+```typescript
+import {bg} from 'src/design-tokens/react-native/styles'
+
+export default function Component() {
+  // div의 배경색이 #ffffff 이 됩니다. react-native/global/styles.ts 파일을 참조하세요.
+  return <View styles={[bg.white]} />
+}
+```
+
+#### 자동완성(IntelliSense) 지원
+
+타입스크립트 타입이 선언되어 있으므로, 자동완성이 지원됩니다.
 
 ### 업데이트 방법
 
@@ -85,7 +99,11 @@ Bitbucket pipeline이 이 깃허브 저장소에 대한 읽기 권한을 가지�
 
 * `tokens.json`: 피그마 플러그인에서 내보내어진 토큰 파일입니다 (디자인 토큰의 첫번째 단계)
 * `tokens/global.json`: [tokens-transformer](https://www.npmjs.com/package/token-transformer)에 의해 [style-dictionary](https://www.npmjs.com/package/style-dictionary) 가 읽어들일 수 있는 형태로 변환된 파일입니다. (명령어: `npm run transform`)
-* `build/{platform}/{theme}/{type}.json`: [style-dictionary](https://www.npmjs.com/package/style-dictionary) 에 의해 tailwind.config.js 의 theme에 넘겨줄 수 있는 형태로 변환된 파일입니다. (명령어: `npm run style-dictionary`)
-  * 예시: `build/tailwind/global/colors.json`
-* `tailwind.config.js`: 웹/앱 프로젝트에서 테일윈드 프리셋으로 사용 가능한 테일윈드 설정 파일입니다.
+* `tailwind/{theme}/{type}.json`: [style-dictionary](https://www.npmjs.com/package/style-dictionary) 에 의해 tailwind.config.js 의 theme에 넘겨줄 수 있는 형태로 변환된 파일입니다. (명령어: `npm run style-dictionary`)
+  * 예시: `tailwind/global/colors.json`
+  * **직접 수정해서는 안됩니다.**
+* `react-native/{theme}/{type}.ts`: [style-dictionary](https://www.npmjs.com/package/style-dictionary) 에 의해 `react-native/{theme}/styles.ts` 가 임포트할 수 있는 형태로 변환된 파일입니다. (명령어: `npm run style-dictionary`)
+  * 예시: `react-native/global/colors.ts`
+  * **직접 수정해서는 안됩니다.**
+* `react-native/{theme}/styles.ts`: `react-native/{theme}/{type}.ts` 를 임포트해서 [republic](https://bitbucket.org/publyproduct/react-native-republic) 과 호환되는 스타일 오브젝트로 만든 파일입니다.
 
