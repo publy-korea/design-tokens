@@ -42,6 +42,9 @@
             "hover": "#115E59"
           }
         }
+      },
+      "badge": {
+        "unread": "#ef4444"
       }
     },
     "white": "#ffffff",
