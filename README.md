@@ -4,7 +4,10 @@
 
 ### 웹 (테일윈드 기반)
 
+#### `color`
+
 ```jsonc
+// tailwind/global/colors.json
 {
   "color": {
     // ...
@@ -17,12 +20,35 @@
 }
 ```
 
-위와 같이 build/tailwind/global/colors.json 파일이 있다고 가정하면, 키 순서대로 -으로 연결하면 `color-background-default` 가 됩니다. 그리고 테일윈드에서 배경색을 지정하기 위한 프리픽스는 `tw-bg`이므로, 그 둘을 -으로 연결한 `tw-bg-color-background-default`가 최종 클래스가 됩니다.
+위와 같이 tailwind/global/colors.json 파일이 있다고 가정하면, 키 순서대로 -으로 연결하면 `color-background-default` 가 됩니다. 그리고 테일윈드에서 배경색을 지정하기 위한 프리픽스는 `tw-bg`이므로, 그 둘을 -으로 연결한 `tw-bg-color-background-default`가 최종 클래스가 됩니다.
 
 ```typescript
 export default function Component() {
   // div의 배경색이 #ffffff 이 됩니다. tailwind/global/colors.json 파일을 참조하세요.
   return <div className="tw-bg-color-background-default">hello world</div>
+}
+```
+
+#### `box-shadow`
+
+```jsonc
+// tailwind/global/box-shadows.json
+{
+  "elevation": {
+    "shadow": {
+      "small": "0px 2px 4px 0px rgb(100 116 139 / 0.10)",
+      // ...
+    },
+  }
+}
+```
+
+위와 같이 tailwind/global/box-shadows.json 파일이 있다고 가정하면, 키 순서대로 -으로 연결하면 `elevation-shadow-small` 가 됩니다. 그리고 테일윈드에서 배경색을 지정하기 위한 프리픽스는 `tw-shadow`이므로, 그 둘을 -으로 연결한 `tw-shadow-elevation-shadow-small`가 최종 클래스가 됩니다.
+
+```typescript
+export default function Component() {
+  // box-shadow: 0px 2px 4px 0px rgb(100 116 139 / 0.10);
+  return <div className="tw-shadow-elevation-shadow-small">hello world</div>
 }
 ```
 

@@ -17,6 +17,7 @@ function isBoxShadow(token) {
 
 /** @type {import('style-dictionary/types/Config').Config} */
 module.exports = {
+  // TODO: @jaesung global.json 대신 light.json으로 이름을 바꿔주어야 함(다른 global들도 모두)
   source: ['tokens/global.json'],
   format: {
     createTailwindThemeColor: ({ dictionary }) => {
