@@ -1,0 +1,11 @@
+{
+  "elevation": {
+    "shadow": {
+      "small": "0px 2px 4px 0px rgb(100 116 139 / 0.10)",
+      "medium": "0px 4px 6px 0px rgb(100 116 139 / 0.12)",
+      "large": "0px 8px 12px 0px rgb(100 116 139 / 0.14)",
+      "xlarge": "0px 16px 20px 0px rgb(100 116 139 / 0.16)",
+      "2xlarge": "0px 25px 50px 0px rgb(100 116 139 / 0.24)"
+    }
+  }
+}
