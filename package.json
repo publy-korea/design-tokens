@@ -8,7 +8,7 @@
     "npm": "9.5.x"
   },
   "scripts": {
-    "transform:global": "token-transformer tokens.json tokens/global.json Global",
+    "transform:global": "token-transformer tokens.json tokens/global.json Light",
     "transform": "npm run transform:global",
     "style-dictionary": "style-dictionary build --config ./style-dictionary.config.js"
   },
@@ -35,6 +35,7 @@
     "token-transformer": "0.0.30"
   },
   "dependencies": {
-    "lodash.mapvalues": "^4.6.0"
+    "lodash.mapvalues": "^4.6.0",
+    "polished": "^4.2.2"
   }
 }

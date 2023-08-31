@@ -12,7 +12,11 @@
         "secondary": "#0F766E",
         "primary": "#334155",
         "completed": "#64748b",
-        "disabled": "#94a3b8"
+        "disabled": "#94a3b8",
+        "destructive": {
+          "enabled": "#ef4444",
+          "hover": "#dc2626"
+        }
       }
     },
     "background": {

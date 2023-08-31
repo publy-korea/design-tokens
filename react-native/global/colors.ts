@@ -1,6 +1,6 @@
 /**
  * 직접 수정하지 마세요
- * Fri Aug 04 2023 09:14:31 GMT+0000 (Coordinated Universal Time)에 생성됨
+ * Wed Aug 30 2023 19:56:40 GMT+0900 (대한민국 표준시)에 생성됨
  */
 
 export default {
@@ -15,6 +15,8 @@ export default {
   "colorTextButtonPrimary": "#334155",
   "colorTextButtonCompleted": "#64748b",
   "colorTextButtonDisabled": "#94a3b8",
+  "colorTextButtonDestructiveEnabled": "#ef4444",
+  "colorTextButtonDestructiveHover": "#dc2626",
   "colorBackgroundSelected": "#f1f5f9",
   "colorBackgroundHover": "#f8fafc",
   "colorBackgroundButtonDisabled": "#f1f5f9",
