@@ -1,4 +1,4 @@
-import mapValues = require('lodash.mapvalues');
+import mapValues from 'lodash.mapvalues';
 import colors from './colors';
 
 export const bg = mapValues(colors, value => ({backgroundColor: value}));
