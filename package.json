@@ -35,7 +35,6 @@
     "token-transformer": "0.0.30"
   },
   "dependencies": {
-    "lodash.mapvalues": "^4.6.0",
     "polished": "^4.2.2"
   }
 }
