@@ -1,6 +1,6 @@
 /**
  * 직접 수정하지 마세요
- * Fri Sep 08 2023 07:53:53 GMT+0000 (Coordinated Universal Time)에 생성됨
+ * Mon Sep 11 2023 11:43:26 GMT+0000 (Coordinated Universal Time)에 생성됨
  */
 
 export default {
@@ -15,10 +15,9 @@ export default {
   "colorTextButtonPrimary": "#334155",
   "colorTextButtonCompleted": "#64748b",
   "colorTextButtonDisabled": "#94a3b8",
-  "colorTextButtonDestructiveEnabled": "#ef4444",
-  "colorTextButtonDestructiveHover": "#dc2626",
-  "colorBackgroundSelected": "#f1f5f9",
-  "colorBackgroundHover": "#f8fafc",
+  "colorTextButtonDestructive": "#ef4444",
+  "colorBackgroundButtonDestructiveEnabled": "#ef4444",
+  "colorBackgroundButtonDestructiveHover": "#dc2626",
   "colorBackgroundButtonDisabled": "#f1f5f9",
   "colorBackgroundButtonCompleted": "#e2e8f0",
   "colorBackgroundButtonHover": "#e2e8f0",
@@ -30,6 +29,8 @@ export default {
   "colorBackgroundButtonSecondaryTintHover": "#d5f4f2",
   "colorBackgroundButtonSecondaryBoldEnabled": "#0F766E",
   "colorBackgroundButtonSecondaryBoldHover": "#115E59",
+  "colorBackgroundSelected": "#f1f5f9",
+  "colorBackgroundHover": "#f8fafc",
   "colorBackgroundBadgeUnread": "#ef4444",
   "colorWhite": "#ffffff",
   "colorBlack": "#000000",

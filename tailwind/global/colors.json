@@ -13,16 +13,15 @@
         "primary": "#334155",
         "completed": "#64748b",
         "disabled": "#94a3b8",
-        "destructive": {
-          "enabled": "#ef4444",
-          "hover": "#dc2626"
-        }
+        "destructive": "#ef4444"
       }
     },
     "background": {
-      "selected": "#f1f5f9",
-      "hover": "#f8fafc",
       "button": {
+        "destructive": {
+          "enabled": "#ef4444",
+          "hover": "#dc2626"
+        },
         "disabled": "#f1f5f9",
         "completed": "#e2e8f0",
         "hover": "#e2e8f0",
@@ -47,6 +46,8 @@
           }
         }
       },
+      "selected": "#f1f5f9",
+      "hover": "#f8fafc",
       "badge": {
         "unread": "#ef4444"
       }

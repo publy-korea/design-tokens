@@ -55,6 +55,14 @@
           "type": "color"
         },
         "destructive": {
+          "value": "#ef4444",
+          "type": "color"
+        }
+      }
+    },
+    "background": {
+      "button": {
+        "destructive": {
           "enabled": {
             "value": "#ef4444",
             "type": "color",
@@ -64,21 +72,7 @@
             "value": "#dc2626",
             "type": "color"
           }
-        }
-      }
-    },
-    "background": {
-      "selected": {
-        "value": "#f1f5f9",
-        "type": "color",
-        "description": "default의 배경색을 지닌 경우에 selected가 일어날 시 보이는 배경 색상입니다."
-      },
-      "hover": {
-        "value": "#f8fafc",
-        "type": "color",
-        "description": "default의 배경색을 지닌 경우에 hover가 일어날 시 보이는 배경 색상입니다."
-      },
-      "button": {
+        },
         "disabled": {
           "value": "#f1f5f9",
           "type": "color",
@@ -140,6 +134,16 @@
             }
           }
         }
+      },
+      "selected": {
+        "value": "#f1f5f9",
+        "type": "color",
+        "description": "default의 배경색을 지닌 경우에 selected가 일어날 시 보이는 배경 색상입니다."
+      },
+      "hover": {
+        "value": "#f8fafc",
+        "type": "color",
+        "description": "default의 배경색을 지닌 경우에 hover가 일어날 시 보이는 배경 색상입니다."
       },
       "badge": {
         "unread": {
