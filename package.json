@@ -10,7 +10,8 @@
   "scripts": {
     "transform:global": "token-transformer tokens.json tokens/global.json Light",
     "transform": "npm run transform:global",
-    "style-dictionary": "style-dictionary build --config ./style-dictionary.config.js"
+    "style-dictionary": "style-dictionary build --config ./style-dictionary.config.js",
+    "build": "npm run transform && style-dictionary"
   },
   "repository": {
     "type": "git",
