@@ -33,7 +33,7 @@ module.exports = {
         const {x, y, blur, spread} = token.value;
         const [color, alpha] = token.value.color.split(', ');
         const {red, green, blue} = parseToRgb(color);
-        setWith(theme, token.path.join('.'), `${x}px ${y}px ${blur}px ${spread}px rgb(${red} ${green} ${blue} / ${alpha})`, Object);
+        setWith(theme, token.path.join('-'), `${x}px ${y}px ${blur}px ${spread}px rgb(${red} ${green} ${blue} / ${alpha})`, Object);
       });
       return JSON.stringify(theme, undefined, 2);
     },
