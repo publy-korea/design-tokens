@@ -1,6 +1,9 @@
 {
   "color": {
     "text": {
+      "success": "#16a34a",
+      "error": "#b91c1c",
+      "warning": "#a16207",
       "brand": "#ed6653",
       "bold": "#0f172a",
       "subtle": "#334155",
@@ -9,7 +12,6 @@
       "placeholder": "#94a3b8",
       "inverse": "#ffffff",
       "button": {
-        "secondary": "#0F766E",
         "primary": "#334155",
         "completed": "#64748b",
         "disabled": "#94a3b8",
@@ -33,16 +35,6 @@
           "bold": {
             "hover": "#1e293b",
             "enabled": "#334155"
-          }
-        },
-        "secondary": {
-          "tint": {
-            "enabled": "#f0fdfa",
-            "hover": "#d5f4f2"
-          },
-          "bold": {
-            "enabled": "#0F766E",
-            "hover": "#115E59"
           }
         }
       },

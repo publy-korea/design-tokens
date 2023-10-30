@@ -11,7 +11,7 @@
     "transform:global": "token-transformer tokens.json tokens/global.json Light",
     "transform": "npm run transform:global",
     "style-dictionary": "style-dictionary build --config ./style-dictionary.config.js",
-    "build": "npm run transform && style-dictionary"
+    "build": "npm run transform && npm run style-dictionary"
   },
   "repository": {
     "type": "git",
