@@ -1,6 +1,18 @@
 {
   "color": {
     "text": {
+      "success": {
+        "value": "#16a34a",
+        "type": "color"
+      },
+      "error": {
+        "value": "#b91c1c",
+        "type": "color"
+      },
+      "warning": {
+        "value": "#a16207",
+        "type": "color"
+      },
       "brand": {
         "value": "#ed6653",
         "type": "color",
@@ -36,11 +48,6 @@
         "type": "color"
       },
       "button": {
-        "secondary": {
-          "value": "#0F766E",
-          "type": "color",
-          "description": "button의 secondary에 속하는 텍스트 색상입니다."
-        },
         "primary": {
           "value": "#334155",
           "type": "color",
@@ -109,28 +116,6 @@
               "value": "#334155",
               "type": "color",
               "description": "button의 primary의 solid 타입을 나타내는 bg컬러입니다."
-            }
-          }
-        },
-        "secondary": {
-          "tint": {
-            "enabled": {
-              "value": "#f0fdfa",
-              "type": "color"
-            },
-            "hover": {
-              "value": "#d5f4f2",
-              "type": "color"
-            }
-          },
-          "bold": {
-            "enabled": {
-              "value": "#0F766E",
-              "type": "color"
-            },
-            "hover": {
-              "value": "#115E59",
-              "type": "color"
             }
           }
         }
@@ -769,6 +754,11 @@
         "value": "1.5rem",
         "type": "lineHeights",
         "description": "Line-Height: 1.5rem;"
+      },
+      "loose": {
+        "value": "2rem",
+        "type": "lineHeights",
+        "description": "Line-Height: 2rem;"
       }
     }
   }
