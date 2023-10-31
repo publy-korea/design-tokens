@@ -564,8 +564,10 @@
         "value": "#14532d",
         "type": "color"
       }
-    },
-    "border": {
+    }
+  },
+  "\bborder": {
+    "color": {
       "button": {
         "completed": {
           "value": {
