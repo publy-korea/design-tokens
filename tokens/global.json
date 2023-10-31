@@ -566,7 +566,7 @@
       }
     }
   },
-  "\bborder": {
+  "border": {
     "color": {
       "button": {
         "completed": {
