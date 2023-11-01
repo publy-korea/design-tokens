@@ -1,6 +1,6 @@
 /**
  * 직접 수정하지 마세요
- * Mon Oct 30 2023 19:10:21 GMT+0900 (대한민국 표준시)에 생성됨
+ * Tue Oct 31 2023 04:31:05 GMT+0000 (Coordinated Universal Time)에 생성됨
  */
 
 export default {

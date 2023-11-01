@@ -564,8 +564,10 @@
         "value": "#14532d",
         "type": "color"
       }
-    },
-    "border": {
+    }
+  },
+  "border": {
+    "color": {
       "button": {
         "completed": {
           "value": {
