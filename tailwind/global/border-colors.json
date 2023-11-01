@@ -1,6 +1,6 @@
 {
-  "color": {
-    "border": {
+  "border": {
+    "color": {
       "button": {
         "completed": "#64748b",
         "disabled": "#cbd5e1",
