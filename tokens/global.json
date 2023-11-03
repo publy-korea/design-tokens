@@ -135,6 +135,10 @@
           "value": "#ef4444",
           "type": "color"
         }
+      },
+      "tooltip": {
+        "value": "# #0f172a",
+        "type": "color"
       }
     },
     "white": {

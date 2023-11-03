@@ -42,7 +42,8 @@
       "hover": "#f8fafc",
       "badge": {
         "unread": "#ef4444"
-      }
+      },
+      "tooltip": "# #0f172a"
     },
     "white": "#ffffff",
     "black": "#000000",
