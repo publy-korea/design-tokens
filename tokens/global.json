@@ -139,6 +139,10 @@
       "tooltip": {
         "value": "# #0f172a",
         "type": "color"
+      },
+      "error": {
+        "value": "#b91c1c",
+        "type": "color"
       }
     },
     "white": {
