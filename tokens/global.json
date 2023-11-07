@@ -137,7 +137,7 @@
         }
       },
       "tooltip": {
-        "value": "# #0f172a",
+        "value": "#0f172a",
         "type": "color"
       },
       "error": {

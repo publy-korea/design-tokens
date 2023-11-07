@@ -43,7 +43,7 @@
       "badge": {
         "unread": "#ef4444"
       },
-      "tooltip": "# #0f172a",
+      "tooltip": "#0f172a",
       "error": "#b91c1c"
     },
     "white": "#ffffff",
