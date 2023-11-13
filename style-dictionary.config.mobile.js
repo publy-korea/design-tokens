@@ -17,15 +17,18 @@ function isBoxShadow(token) {
 
 /** @type {import('style-dictionary/types/Config').Config} */
 module.exports = {
-  // TODO: @jaesung global.json 대신 light.json으로 이름을 바꿔주어야 함(다른 global들도 모두)
-  source: ['tokens/global.json'],
+  source: ['tokens/mobile.json'],
   format: {
     createTailwindThemeColor: ({ dictionary }) => {
       const theme = {}
       dictionary.allTokens.forEach(token => {
-        setWith(theme, token.path.join('.'), token.value, Object);
+        setWith(theme, token.path.join('.'), `var(--${token.path.join('-')})`, Object);
       });
+      
       return JSON.stringify(theme, undefined, 2);
+    },
+    createCSSVariableColor: ({ dictionary }) => {
+      return `.theme-mobile {\n  ${dictionary.allTokens.map(token => `--${token.path.join('-')}: ${token.value};`).join('\n  ')}\n}`
     },
     createTailwindThemeBoxShadow: ({ dictionary }) => {
       const theme = {}
@@ -51,27 +54,27 @@ module.exports = {
     }
   },
   platforms: {
+    css: {
+      transforms: ['attribute/cti', 'name/cti/kebab'],
+      buildPath: './css/',
+      files: [
+        {
+          filter: isColor,
+          destination: 'mobile/colors.css',
+          format: 'createCSSVariableColor'
+        },
+      ]
+    },
     tailwind: {
       transforms: ['attribute/cti', 'name/cti/kebab'],
-      buildPath: './tailwind/global/',
-      files: [{
-        filter: isColor,
-        destination: 'colors.json',
-        format: 'createTailwindThemeColor'
-      }, {
-        filter: isBoxShadow,
-        destination: 'box-shadows.json',
-        format: 'createTailwindThemeBoxShadow'
-      }]
+      buildPath: './tailwind/',
+      files: [
+        {
+          filter: isColor,
+          destination: 'colors.json',
+          format: 'createTailwindThemeColor'
+        },
+      ]
     },
-    rn: {
-      transformGroup: 'react-native',
-      buildPath: './react-native/global/',
-      files: [{
-        filter: isColor,
-        destination: 'colors.ts',
-        format: 'createReactNativeTheme'
-      }]
-    }
   }
 }

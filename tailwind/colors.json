@@ -1,0 +1,170 @@
+{
+  "color": {
+    "text": {
+      "success": "var(--color-text-success)",
+      "error": "var(--color-text-error)",
+      "warning": "var(--color-text-warning)",
+      "brand": "var(--color-text-brand)",
+      "bold": "var(--color-text-bold)",
+      "subtle": "var(--color-text-subtle)",
+      "subtler": "var(--color-text-subtler)",
+      "subtlest": "var(--color-text-subtlest)",
+      "placeholder": "var(--color-text-placeholder)",
+      "inverse": "var(--color-text-inverse)",
+      "button": {
+        "primary": "var(--color-text-button-primary)",
+        "completed": "var(--color-text-button-completed)",
+        "disabled": "var(--color-text-button-disabled)",
+        "destructive": "var(--color-text-button-destructive)"
+      }
+    },
+    "background": {
+      "button": {
+        "destructive": {
+          "enabled": "var(--color-background-button-destructive-enabled)",
+          "hover": "var(--color-background-button-destructive-hover)"
+        },
+        "disabled": "var(--color-background-button-disabled)",
+        "completed": "var(--color-background-button-completed)",
+        "hover": "var(--color-background-button-hover)",
+        "primary": {
+          "tint": {
+            "enabled": "var(--color-background-button-primary-tint-enabled)",
+            "hover": "var(--color-background-button-primary-tint-hover)"
+          },
+          "bold": {
+            "hover": "var(--color-background-button-primary-bold-hover)",
+            "enabled": "var(--color-background-button-primary-bold-enabled)"
+          }
+        }
+      },
+      "selected": "var(--color-background-selected)",
+      "hover": "var(--color-background-hover)",
+      "badge": {
+        "unread": "var(--color-background-badge-unread)"
+      }
+    },
+    "white": "var(--color-white)",
+    "black": "var(--color-black)",
+    "coral": {
+      "50": "var(--color-coral-50)",
+      "100": "var(--color-coral-100)",
+      "200": "var(--color-coral-200)",
+      "300": "var(--color-coral-300)",
+      "400": "var(--color-coral-400)",
+      "500": "var(--color-coral-500)",
+      "600": "var(--color-coral-600)",
+      "700": "var(--color-coral-700)",
+      "800": "var(--color-coral-800)",
+      "900": "var(--color-coral-900)"
+    },
+    "teal": {
+      "50": "var(--color-teal-50)",
+      "100": "var(--color-teal-100)",
+      "200": "var(--color-teal-200)",
+      "300": "var(--color-teal-300)",
+      "400": "var(--color-teal-400)",
+      "500": "var(--color-teal-500)",
+      "600": "var(--color-teal-600)",
+      "700": "var(--color-teal-700)",
+      "800": "var(--color-teal-800)",
+      "900": "var(--color-teal-900)"
+    },
+    "red": {
+      "50": "var(--color-red-50)",
+      "100": "var(--color-red-100)",
+      "200": "var(--color-red-200)",
+      "300": "var(--color-red-300)",
+      "400": "var(--color-red-400)",
+      "500": "var(--color-red-500)",
+      "600": "var(--color-red-600)",
+      "700": "var(--color-red-700)",
+      "800": "var(--color-red-800)",
+      "900": "var(--color-red-900)"
+    },
+    "yellow": {
+      "50": "var(--color-yellow-50)",
+      "100": "var(--color-yellow-100)",
+      "200": "var(--color-yellow-200)",
+      "300": "var(--color-yellow-300)",
+      "400": "var(--color-yellow-400)",
+      "500": "var(--color-yellow-500)",
+      "600": "var(--color-yellow-600)",
+      "700": "var(--color-yellow-700)",
+      "800": "var(--color-yellow-800)",
+      "900": "var(--color-yellow-900)"
+    },
+    "blue": {
+      "50": "var(--color-blue-50)",
+      "100": "var(--color-blue-100)",
+      "200": "var(--color-blue-200)",
+      "300": "var(--color-blue-300)",
+      "400": "var(--color-blue-400)",
+      "500": "var(--color-blue-500)",
+      "600": "var(--color-blue-600)",
+      "700": "var(--color-blue-700)",
+      "800": "var(--color-blue-800)",
+      "900": "var(--color-blue-900)"
+    },
+    "indigo": {
+      "50": "var(--color-indigo-50)",
+      "100": "var(--color-indigo-100)",
+      "200": "var(--color-indigo-200)",
+      "300": "var(--color-indigo-300)",
+      "400": "var(--color-indigo-400)",
+      "500": "var(--color-indigo-500)",
+      "600": "var(--color-indigo-600)",
+      "700": "var(--color-indigo-700)",
+      "800": "var(--color-indigo-800)",
+      "900": "var(--color-indigo-900)"
+    },
+    "purple": {
+      "50": "var(--color-purple-50)",
+      "100": "var(--color-purple-100)",
+      "200": "var(--color-purple-200)",
+      "300": "var(--color-purple-300)",
+      "400": "var(--color-purple-400)",
+      "500": "var(--color-purple-500)",
+      "600": "var(--color-purple-600)",
+      "700": "var(--color-purple-700)",
+      "800": "var(--color-purple-800)",
+      "900": "var(--color-purple-900)"
+    },
+    "magenta": {
+      "50": "var(--color-magenta-50)",
+      "100": "var(--color-magenta-100)",
+      "200": "var(--color-magenta-200)",
+      "300": "var(--color-magenta-300)",
+      "400": "var(--color-magenta-400)",
+      "500": "var(--color-magenta-500)",
+      "600": "var(--color-magenta-600)",
+      "700": "var(--color-magenta-700)",
+      "800": "var(--color-magenta-800)",
+      "900": "var(--color-magenta-900)"
+    },
+    "slate": {
+      "50": "var(--color-slate-50)",
+      "100": "var(--color-slate-100)",
+      "200": "var(--color-slate-200)",
+      "300": "var(--color-slate-300)",
+      "400": "var(--color-slate-400)",
+      "500": "var(--color-slate-500)",
+      "600": "var(--color-slate-600)",
+      "700": "var(--color-slate-700)",
+      "800": "var(--color-slate-800)",
+      "900": "var(--color-slate-900)"
+    },
+    "green": {
+      "50": "var(--color-green-50)",
+      "100": "var(--color-green-100)",
+      "200": "var(--color-green-200)",
+      "300": "var(--color-green-300)",
+      "400": "var(--color-green-400)",
+      "500": "var(--color-green-500)",
+      "600": "var(--color-green-600)",
+      "700": "var(--color-green-700)",
+      "800": "var(--color-green-800)",
+      "900": "var(--color-green-900)"
+    }
+  }
+}

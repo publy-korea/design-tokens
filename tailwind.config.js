@@ -1,4 +1,4 @@
-const colors = require('./tailwind/global/colors.json');
+const colors = require('./tailwind/colors.json');
 const boxShadow = require('./tailwind/global/box-shadows.json');
 
 /** @type {import('tailwindcss').Config} */
