@@ -1,2 +1,4 @@
 @import './mobile/colors.css';
 @import './pc/colors.css';
+@import './mobile/borders.css';
+@import './pc/borders.css';
