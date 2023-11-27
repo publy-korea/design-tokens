@@ -1,11 +1,12 @@
 const { filters, tailwindThemeFormatter, cssVariableFormatter, reactNativeThemeFormatter } = require("./lib/style-dictionary")
 
-/** @type {import('style-dictionary/types/Config').Config} */
+const MODE = 'pc'
+
 module.exports = {
-  source: ['tokens/pc.json'],
+  source: [`tokens/${MODE}.json`],
   format: {
     ...tailwindThemeFormatter,
-    ...cssVariableFormatter('pc'),
+    ...cssVariableFormatter(MODE),
     // ...reactNativeThemeFormatter
   },
   platforms: {
@@ -15,13 +16,18 @@ module.exports = {
       files: [
         {
           filter: filters.isColor,
-          destination: 'pc/colors.css',
+          destination: `${MODE}/colors.css`,
           format: 'createCSSVariableColor',
         },
         {
           filter: filters.isBorder,
-          destination: 'pc/borders.css',
+          destination: `${MODE}/borders.css`,
           format: 'createCSSVariableBorder',
+        },
+        {
+          filter: filters.isBoxShadow,
+          destination: `${MODE}/boxShadows.css`,
+          format: 'createCSSVariableBoxShadow',
         },
       ],
     },
@@ -38,6 +44,11 @@ module.exports = {
           filter: filters.isBorder,
           destination: 'borders.json',
           format: 'createTailwindThemeBorder',
+        },
+        {
+          filter: filters.isBoxShadow,
+          destination: 'boxShadows.json',
+          format: 'createTailwindThemeBoxShadow',
         },
       ],
     },
