@@ -1,4 +1,4 @@
-const { filters, tailwindThemeFormatter, cssVariableFormatter, reactNativeThemeFormatter } = require("./helpers")
+const { filters, tailwindThemeFormatter, cssVariableFormatter, reactNativeThemeFormatter } = require("./lib/style-dictionary")
 
 /** @type {import('style-dictionary/types/Config').Config} */
 module.exports = {
