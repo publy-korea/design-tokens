@@ -1,0 +1,18 @@
+{
+  "border": {
+    "color": {
+      "button": {
+        "completed": "var(--border-color-button-completed-color)",
+        "disabled": "var(--border-color-button-disabled-color)",
+        "secondary": {
+          "enabled": "var(--border-color-button-secondary-enabled-color)",
+          "hover": "var(--border-color-button-secondary-hover-color)"
+        },
+        "primary": {
+          "enabled": "var(--border-color-button-primary-enabled-color)",
+          "hover": "var(--border-color-button-primary-hover-color)"
+        }
+      }
+    }
+  }
+}

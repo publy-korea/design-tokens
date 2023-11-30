@@ -8,7 +8,7 @@ module.exports = {
   format: {
     ...tailwindThemeFormatter,
     ...cssVariableFormatter(MODE),
-    // ...reactNativeThemeFormatter
+    ...reactNativeThemeFormatter
   },
   platforms: {
     css: {
@@ -26,8 +26,13 @@ module.exports = {
           format: 'createCSSVariableBorder',
         },
         {
+          filter: filters.isBorder,
+          destination: `${MODE}/border-colors.css`,
+          format: 'createCSSVariableBorderColor',
+        },
+        {
           filter: filters.isBoxShadow,
-          destination: `${MODE}/boxShadows.css`,
+          destination: `${MODE}/box-shadows.css`,
           format: 'createCSSVariableBoxShadow',
         },
       ],
@@ -46,10 +51,31 @@ module.exports = {
           destination: 'borders.json',
           format: 'createTailwindThemeBorder',
         },
+          {
+          filter: filters.isBorder,
+          destination: 'border-colors.json',
+          format: 'createTailwindThemeBorderColor',
+        },
         {
           filter: filters.isBoxShadow,
-          destination: 'boxShadows.json',
+          destination: 'box-shadows.json',
           format: 'createTailwindThemeBoxShadow',
+        },
+      ],
+    },
+    rn: {
+      transformGroup:'react-native',
+      buildPath: './react-native/',
+      files: [
+        {
+          filter: filters.isColor,
+          destination: 'colors.ts',
+          format: 'createReactNativeThemeColor',
+        },
+        {
+          filter: filters.isBorder,
+          destination: 'border-colors.ts',
+          format: 'createReactNativeThemeBorderColor',
         },
       ],
     },
