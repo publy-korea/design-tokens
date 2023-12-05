@@ -2,5 +2,7 @@
 @import './pc/colors.css';
 @import './mobile/borders.css';
 @import './pc/borders.css';
-@import './mobile/boxShadows.css';
-@import './pc/boxShadows.css';
+@import './mobile/border-colors.css';
+@import './pc/border-colors.css';
+@import './mobile/box-shadows.css';
+@import './pc/box-shadows.css';
