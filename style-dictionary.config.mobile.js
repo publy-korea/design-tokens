@@ -37,32 +37,6 @@ module.exports = {
         },
       ],
     },
-    tailwind: {
-      transforms: ['attribute/cti', 'name/cti/kebab'],
-      buildPath: './tailwind/',
-      files: [
-        {
-          filter: filters.isColor,
-          destination: 'colors.json',
-          format: 'createTailwindThemeColor',
-        },
-        {
-          filter: filters.isBorder,
-          destination: 'borders.json',
-          format: 'createTailwindThemeBorder',
-        },
-          {
-          filter: filters.isBorder,
-          destination: 'border-colors.json',
-          format: 'createTailwindThemeBorderColor',
-        },
-        {
-          filter: filters.isBoxShadow,
-          destination: 'box-shadows.json',
-          format: 'createTailwindThemeBoxShadow',
-        },
-      ],
-    },
     rn: {
       transformGroup:'react-native',
       buildPath: './react-native/',

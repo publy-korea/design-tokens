@@ -24,9 +24,14 @@ module.exports = {
           destination: `${MODE}/borders.css`,
           format: 'createCSSVariableBorder',
         },
+         {
+          filter: filters.isBorder,
+          destination: `${MODE}/border-colors.css`,
+          format: 'createCSSVariableBorderColor',
+        },
         {
           filter: filters.isBoxShadow,
-          destination: `${MODE}/boxShadows.css`,
+          destination: `${MODE}/box-shadows.css`,
           format: 'createCSSVariableBoxShadow',
         },
       ],
@@ -46,8 +51,13 @@ module.exports = {
           format: 'createTailwindThemeBorder',
         },
         {
+          filter: filters.isBorder,
+          destination: 'border-colors.json',
+          format: 'createTailwindThemeBorderColor',
+        },
+        {
           filter: filters.isBoxShadow,
-          destination: 'boxShadows.json',
+          destination: 'box-shadows.json',
           format: 'createTailwindThemeBoxShadow',
         },
       ],
