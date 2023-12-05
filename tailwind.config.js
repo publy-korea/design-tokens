@@ -1,13 +1,15 @@
 const colors = require('./tailwind/colors.json');
-const borders = require('./tailwind/borders.json');
-const boxShadow = require('./tailwind/global/box-shadows.json');
+// const borders = require('./tailwind/borders.json');
+const borderColor = require('./tailwind/border-colors.json');
+const boxShadow = require('./tailwind/box-shadows.json');
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   theme: {
     extend: {
       colors,
-      borders,
+      borderColor,
+      // borders,
       boxShadow
     }
   },
