@@ -1,0 +1,6 @@
+@import './mobile/colors.css';
+@import './pc/colors.css';
+@import './mobile/borders.css';
+@import './pc/borders.css';
+@import './mobile/boxShadows.css';
+@import './pc/boxShadows.css';
