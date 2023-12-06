@@ -1,6 +1,6 @@
 /**
  * 직접 수정하지 마세요
- * Wed Dec 06 2023 16:44:29 GMT+0900 (Korean Standard Time)에 생성됨
+ * Wed Dec 06 2023 17:33:10 GMT+0900 (Korean Standard Time)에 생성됨
  */
 
 export default {
