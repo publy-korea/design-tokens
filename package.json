@@ -15,7 +15,8 @@
     "style-dictionary:pc": "style-dictionary build --config ./style-dictionary.config.pc.js",
     "build:pc": "npm run transform:pc && npm run style-dictionary:pc",
     "build:mobile": "npm run transform:mobile && npm run style-dictionary:mobile",
-    "build":"npm run build:pc && npm run build:mobile"
+    "build": "npm run build:pc && npm run build:mobile",
+    "test": "tailwindcss -i example/input.css -o example/output.css"
   },
   "repository": {
     "type": "git",
