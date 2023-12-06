@@ -35,6 +35,11 @@ module.exports = {
           destination: `${MODE}/box-shadows.css`,
           format: 'createCSSVariableBoxShadow',
         },
+        {
+          filter: filters.isFont,
+          destination: `${MODE}/fonts.css`,
+          format: 'createCSSVariableFont',
+        },
       ],
     },
     rn: {

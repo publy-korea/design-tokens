@@ -513,19 +513,10 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.tw-text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-
-.tw-font-bold {
-  font-weight: 700;
-}
-
-.tw-underline {
-  text-decoration-line: underline;
-}
-
 .tw-bdr-border-color-button-completed {
   border: var(--border-color-button-completed, solid 1px #64748b);
+}
+
+.tw-typo-font-headline-large-bold {
+  font: var(--font-headline-large-bold, 800 30pt/2rem Pretendard);
 }

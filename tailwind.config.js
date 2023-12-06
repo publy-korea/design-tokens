@@ -6,7 +6,7 @@ const boxShadow = require('./tailwind/box-shadows.json');
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   plugins: [
-    require('./tailwind/plugins/border')
+    require('./tailwind/plugins/custom-props')
   ],
   theme: {
     extend: {

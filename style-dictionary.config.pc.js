@@ -34,6 +34,11 @@ module.exports = {
           destination: `${MODE}/box-shadows.css`,
           format: 'createCSSVariableBoxShadow',
         },
+        {
+          filter: filters.isFont,
+          destination: `${MODE}/fonts.css`,
+          format: 'createCSSVariableFont',
+        },
       ],
     },
     tailwind: {
@@ -59,6 +64,11 @@ module.exports = {
           filter: filters.isBoxShadow,
           destination: 'box-shadows.json',
           format: 'createTailwindThemeBoxShadow',
+        },
+        {
+          filter: filters.isFont,
+          destination: 'fonts.json',
+          format: 'createTailwindThemeFont',
         },
       ],
     },
