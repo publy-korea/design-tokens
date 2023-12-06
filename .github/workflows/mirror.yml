@@ -14,5 +14,3 @@ jobs:
             git@bitbucket.org:publyproduct/design-tokens.git
           ssh_private_key:
             ${{ secrets.BITBUCKET_SSH_PRIVATE_KEY }}
-          token:
-            ${{ secrets.PERSONAL_ACCESS_TOKEN }}

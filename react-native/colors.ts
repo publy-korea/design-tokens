@@ -30,6 +30,8 @@ export default {
   "colorBackgroundSelected": "#f1f5f9",
   "colorBackgroundHover": "#f8fafc",
   "colorBackgroundBadgeUnread": "#ef4444",
+  "colorBackgroundTooltip": "#0f172a",
+  "colorBackgroundError": "#b91c1c",
   "colorWhite": "#ffffff",
   "colorBlack": "#000000",
   "colorCoral50": "#fdf4f3",

@@ -1,6 +1,6 @@
 /**
  * 직접 수정하지 마세요
- * Wed Dec 06 2023 17:33:10 GMT+0900 (Korean Standard Time)에 생성됨
+ * Fri Nov 10 2023 05:41:46 GMT+0000 (Coordinated Universal Time)에 생성됨
  */
 
 export default {
@@ -9,5 +9,7 @@ export default {
   "borderColorButtonSecondaryEnabled": "#0F766E",
   "borderColorButtonSecondaryHover": "#115E59",
   "borderColorButtonPrimaryEnabled": "#334155",
-  "borderColorButtonPrimaryHover": "#1e293b"
+  "borderColorButtonPrimaryHover": "#1e293b",
+  "borderColorOnpost": "#cbd5e1",
+  "borderColorOnwhite": "#e2e8f0"
 } as const
