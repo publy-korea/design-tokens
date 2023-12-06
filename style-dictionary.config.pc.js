@@ -34,6 +34,31 @@ module.exports = {
           destination: `${MODE}/box-shadows.css`,
           format: 'createCSSVariableBoxShadow',
         },
+        {
+          filter: filters.isFont,
+          destination: `${MODE}/fonts.css`,
+          format: 'createCSSVariableFont',
+        },
+        {
+          filter: filters.isFontSize,
+          destination: `${MODE}/font-sizes.css`,
+          format: 'createCSSVariableFontSize',
+        },
+        {
+          filter: filters.isFontWeight,
+          destination: `${MODE}/font-weights.css`,
+          format: 'createCSSVariableFontWeight',
+        },
+        {
+          filter: filters.isLineHeight,
+          destination: `${MODE}/line-heights.css`,
+          format: 'createCSSVariableLineHeight',
+        },
+        {
+          filter: filters.isFontFamily,
+          destination: `${MODE}/font-families.css`,
+          format: 'createCSSVariableFontFamily',
+        },
       ],
     },
     tailwind: {
@@ -59,6 +84,31 @@ module.exports = {
           filter: filters.isBoxShadow,
           destination: 'box-shadows.json',
           format: 'createTailwindThemeBoxShadow',
+        },
+        {
+          filter: filters.isFont,
+          destination: 'fonts.json',
+          format: 'createTailwindThemeFont',
+        },
+        {
+          filter: filters.isFontSize,
+          destination: `font-sizes.json`,
+          format: 'createTailwindThemeFontSize',
+        },
+        {
+          filter: filters.isFontWeight,
+          destination: `font-weights.json`,
+          format: 'createTailwindThemeFontWeight',
+        },
+        {
+          filter: filters.isLineHeight,
+          destination: `line-heights.json`,
+          format: 'createTailwindThemeLineHeight',
+        },
+        {
+          filter: filters.isFontFamily,
+          destination: `font-families.json`,
+          format: 'createTailwindThemeFontFamily',
         },
       ],
     },

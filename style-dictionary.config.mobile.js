@@ -35,6 +35,31 @@ module.exports = {
           destination: `${MODE}/box-shadows.css`,
           format: 'createCSSVariableBoxShadow',
         },
+        {
+          filter: filters.isFont,
+          destination: `${MODE}/fonts.css`,
+          format: 'createCSSVariableFont',
+        },
+        {
+          filter: filters.isFontSize,
+          destination: `${MODE}/font-sizes.css`,
+          format: 'createCSSVariableFontSize',
+        },
+        {
+          filter: filters.isFontWeight,
+          destination: `${MODE}/font-weights.css`,
+          format: 'createCSSVariableFontWeight',
+        },
+        {
+          filter: filters.isLineHeight,
+          destination: `${MODE}/line-heights.css`,
+          format: 'createCSSVariableLineHeight',
+        },
+        {
+          filter: filters.isFontFamily,
+          destination: `${MODE}/font-families.css`,
+          format: 'createCSSVariableFontFamily',
+        },
       ],
     },
     rn: {
