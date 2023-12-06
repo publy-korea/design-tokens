@@ -8,7 +8,10 @@ module.exports = {
   theme: {
     extend: {
       colors,
-      borderColor,
+      borderColor: {
+        ...colors,
+        ...borderColor,
+      },
       // borders,
       boxShadow
     }
