@@ -1,0 +1,10 @@
+.theme-pc {
+  --font-size-xs: 12pt;
+  --font-size-sm: 14pt;
+  --font-size-base: 16pt;
+  --font-size-lg: 18pt;
+  --font-size-xl: 20pt;
+  --font-size-2xl: 24pt;
+  --font-size-3xl: 30pt;
+  --font-size-4xl: 36pt;
+}
