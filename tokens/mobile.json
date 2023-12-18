@@ -714,24 +714,24 @@
   },
   "font-size": {
     "xs": {
-      "value": "12pt",
+      "value": "12px",
       "type": "fontSizes",
-      "description": "font-size-12-pt"
+      "description": "font-size-12-px"
     },
     "sm": {
-      "value": "14pt",
+      "value": "14px",
       "type": "fontSizes",
-      "description": "font-size-14pt"
+      "description": "font-size-14px"
     },
     "base": {
-      "value": "16pt",
+      "value": "16px",
       "type": "fontSizes",
-      "description": "font-size-16pt"
+      "description": "font-size-16px"
     },
     "lg": {
-      "value": "18pt",
+      "value": "18px",
       "type": "fontSizes",
-      "description": "font-size-18pt"
+      "description": "font-size-18px"
     },
     "xl": {
       "value": "20pt",
@@ -739,19 +739,19 @@
       "description": "font-size-20pt"
     },
     "2xl": {
-      "value": "24pt",
+      "value": "24px",
       "type": "fontSizes",
-      "description": "font-size-24pt"
+      "description": "font-size-24px"
     },
     "3xl": {
-      "value": "30pt",
+      "value": "30px",
       "type": "fontSizes",
-      "description": "font-size-30pt"
+      "description": "font-size-30px"
     },
     "4xl": {
-      "value": "36pt",
+      "value": "36px",
       "type": "fontSizes",
-      "description": "font-size-36pt"
+      "description": "font-size-36px"
     }
   },
   "font-weight": {
@@ -773,19 +773,19 @@
   },
   "line-height": {
     "tight": {
-      "value": "1.25rem",
+      "value": 1.25,
       "type": "lineHeights",
-      "description": "line-height: 1.25rem"
+      "description": "line-height: 1.25"
     },
     "normal": {
-      "value": "1.5rem",
+      "value": 1.5,
       "type": "lineHeights",
-      "description": "Line-Height: 1.5rem;"
+      "description": "Line-Height: 1.5"
     },
     "loose": {
-      "value": "2rem",
+      "value": 2,
       "type": "lineHeights",
-      "description": "Line-Height: 2rem;"
+      "description": "Line-Height: 2"
     }
   },
   "font-family": {
@@ -801,8 +801,8 @@
           "value": {
             "fontFamily": "Pretendard",
             "fontWeight": 800,
-            "lineHeight": "1.5rem",
-            "fontSize": "24pt"
+            "lineHeight": 1.5,
+            "fontSize": "24px"
           },
           "type": "typography",
           "description": "- 하나의 스크린에 하나만 존재할 수 있는 타이포 타입.\n- 스크린 안에서 가장 큰 위계를 지닌다."
@@ -813,7 +813,7 @@
           "value": {
             "fontFamily": "Pretendard",
             "fontWeight": 800,
-            "lineHeight": "1.5rem",
+            "lineHeight": 1.5,
             "fontSize": "20pt"
           },
           "type": "typography",
@@ -825,11 +825,49 @@
           "value": {
             "fontFamily": "Pretendard",
             "fontWeight": 800,
-            "lineHeight": "1.5rem",
-            "fontSize": "18pt"
+            "lineHeight": 1.5,
+            "fontSize": "18px"
           },
           "type": "typography",
           "description": "- 하나의 스크린에 하나만 존재할 수 있는 타이포 타입.\n- 스크린 안에서 가장 큰 위계를 지닌다."
+        }
+      }
+    },
+    "title": {
+      "large": {
+        "bold": {
+          "value": {
+            "fontFamily": "Pretendard",
+            "fontWeight": 800,
+            "fontSize": "24px",
+            "lineHeight": 1.5
+          },
+          "type": "typography",
+          "description": "- 하나의 스크린에 여러번 존재할 수 있음.\n- 스크린 안에서 헤드라인을 제외한 타이포그래피 중 가장 큰 단위의 위계를 지닌다."
+        }
+      },
+      "medium": {
+        "bold": {
+          "value": {
+            "fontFamily": "Pretendard",
+            "fontWeight": 800,
+            "fontSize": "20pt",
+            "lineHeight": 1.5
+          },
+          "type": "typography",
+          "description": "- 하나의 스크린에 여러번 존재할 수 있음.\n- 스크린 안에서 헤드라인을 제외한 타이포그래피 중 가장 큰 단위의 위계를 지닌다."
+        }
+      },
+      "small": {
+        "bold": {
+          "value": {
+            "fontFamily": "Pretendard",
+            "fontWeight": 800,
+            "fontSize": "18px",
+            "lineHeight": 1.5
+          },
+          "type": "typography",
+          "description": "- 하나의 스크린에 여러번 존재할 수 있음.\n- 스크린 안에서 헤드라인을 제외한 타이포그래피 중 가장 큰 단위의 위계를 지닌다."
         }
       }
     }
