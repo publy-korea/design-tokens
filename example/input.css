@@ -1,0 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* TODO: @jaesung 임포트 안되는 현상 고치기 */
+/* @import "../css/design-token-themes.css"; */
