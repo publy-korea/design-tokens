@@ -1,0 +1,9 @@
+.theme-pc {
+  --font-headline-large-bold: 800 30px/2 Pretendard;
+  --font-headline-medium-bold: 800 24px/2 Pretendard;
+  --font-headline-small-bold: 800 20px/1.5 Pretendard;
+  --font-title-large-bold: 800 30px/1.5 Pretendard;
+  --font-title-medium-bold: 800 24px/1.5 Pretendard;
+  --font-title-small-bold: 800 20px/1.5 Pretendard;
+  --font-title-xsmall-bold: 800 18px/1.5 Pretendard;
+}

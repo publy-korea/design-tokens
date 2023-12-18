@@ -1,4 +1,4 @@
-import mapValues from '../../lib/map-values'
+import mapValues from '../lib/map-values'
 import colors from './colors';
 import borderColors from './border-colors';
 
