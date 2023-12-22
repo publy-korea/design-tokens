@@ -12,7 +12,9 @@
           "enabled": "var(--border-color-button-primary-enabled-color, #334155)",
           "hover": "var(--border-color-button-primary-hover-color, #1e293b)"
         }
-      }
+      },
+      "onpost": "var(--border-color-onpost-color, #cbd5e1)",
+      "onwhite": "var(--border-color-onwhite-color, #e2e8f0)"
     }
   }
 }

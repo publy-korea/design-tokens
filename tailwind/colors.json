@@ -42,7 +42,9 @@
       "hover": "var(--color-background-hover, #f8fafc)",
       "badge": {
         "unread": "var(--color-background-badge-unread, #ef4444)"
-      }
+      },
+      "tooltip": "var(--color-background-tooltip, #0f172a)",
+      "error": "var(--color-background-error, #b91c1c)"
     },
     "white": "var(--color-white, #ffffff)",
     "black": "var(--color-black, #000000)",

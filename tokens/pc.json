@@ -135,6 +135,14 @@
           "value": "#ef4444",
           "type": "color"
         }
+      },
+      "tooltip": {
+        "value": "#0f172a",
+        "type": "color"
+      },
+      "error": {
+        "value": "#b91c1c",
+        "type": "color"
       }
     },
     "white": {
@@ -621,6 +629,22 @@
             "type": "border"
           }
         }
+      },
+      "onpost": {
+        "value": {
+          "color": "#cbd5e1",
+          "width": 1,
+          "style": "solid"
+        },
+        "type": "border"
+      },
+      "onwhite": {
+        "value": {
+          "color": "#e2e8f0",
+          "width": 1,
+          "style": "solid"
+        },
+        "type": "border"
       }
     }
   },
@@ -856,6 +880,14 @@
           "type": "typography",
           "description": "- 하나의 스크린에 여러번 존재할 수 있음.\n- 스크린 안에서 헤드라인을 제외한 타이포그래피 중 가장 큰 단위의 위계를 지닌다."
         }
+      }
+    }
+  },
+  "spacing": {
+    "vertical": {
+      "beween-text": {
+        "value": "8px",
+        "type": "spacing"
       }
     }
   }
