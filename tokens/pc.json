@@ -766,9 +766,9 @@
       "description": "font-weight: 600"
     },
     "bold": {
-      "value": 800,
+      "value": 700,
       "type": "fontWeights",
-      "description": "font-weight: 800;"
+      "description": "font-weight: 700;"
     }
   },
   "line-height": {
@@ -801,7 +801,7 @@
         "bold": {
           "value": {
             "fontFamily": "Pretendard",
-            "fontWeight": 800,
+            "fontWeight": 700,
             "lineHeight": 2,
             "fontSize": "30px"
           },
@@ -813,7 +813,7 @@
         "bold": {
           "value": {
             "fontFamily": "Pretendard",
-            "fontWeight": 800,
+            "fontWeight": 700,
             "lineHeight": 2,
             "fontSize": "24px"
           },
@@ -824,7 +824,7 @@
         "bold": {
           "value": {
             "fontFamily": "Pretendard",
-            "fontWeight": 800,
+            "fontWeight": 700,
             "lineHeight": 1.5,
             "fontSize": "20px"
           },
@@ -837,7 +837,7 @@
         "bold": {
           "value": {
             "fontFamily": "Pretendard",
-            "fontWeight": 800,
+            "fontWeight": 700,
             "fontSize": "30px",
             "lineHeight": 1.5
           },
@@ -849,7 +849,7 @@
         "bold": {
           "value": {
             "fontFamily": "Pretendard",
-            "fontWeight": 800,
+            "fontWeight": 700,
             "fontSize": "24px",
             "lineHeight": 1.5
           },
@@ -861,7 +861,7 @@
         "bold": {
           "value": {
             "fontFamily": "Pretendard",
-            "fontWeight": 800,
+            "fontWeight": 700,
             "fontSize": "20px",
             "lineHeight": 1.5
           },
@@ -873,7 +873,7 @@
         "bold": {
           "value": {
             "fontFamily": "Pretendard",
-            "fontWeight": 800,
+            "fontWeight": 700,
             "fontSize": "18px",
             "lineHeight": 1.5
           },
