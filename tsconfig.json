@@ -1,4 +1,17 @@
 {
   "extends": "@tsconfig/recommended/tsconfig.json",
-  "include": ["react-native/**/*", "global"]
+  "include": [
+    "**/*.ts",
+    "**/*.js",
+    ".eslintrc.json",
+    "lib/**/*.ts",
+    "tailwind/plugins/*.ts",
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "lib",
+    "tailwind",
+    "tailwind.config.js"
+  ]
 }
