@@ -1,5 +1,15 @@
 {
   "extends": "@tsconfig/recommended/tsconfig.json",
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "lib": [
+      "es2017",
+      "dom"
+    ],
+    "esModuleInterop": true,
+    "outDir": "dist",
+  },
   "include": [
     "**/*.ts",
     "**/*.js",
@@ -10,7 +20,6 @@
   "exclude": [
     "node_modules",
     "dist",
-    "lib",
     "tailwind",
     "tailwind.config.js"
   ]
