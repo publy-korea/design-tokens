@@ -4,6 +4,12 @@ node_modules
 .history
 .vscode
 coverage
-react-native/border-colors.ts
-react-native/colors.ts
+
+!react-native
+react-native/*
+!react-native/styles.ts
+
+!tailwind
+tailwind/*
+!tailwind/plugins
 

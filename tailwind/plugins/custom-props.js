@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
 const plugin = require('tailwindcss/plugin');
 const borders = require('../borders.json');
 const fonts = require('../fonts.json');
@@ -5,7 +6,7 @@ const fonts = require('../fonts.json');
 const borderKeys = Object.keys(borders);
 const fontKeys = Object.keys(fonts);
 
-module.exports = plugin(function ({ matchUtilities }) {
+module.exports = plugin(({ matchUtilities }) => {
   matchUtilities(
     {
       bdr: value => ({
