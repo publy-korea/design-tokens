@@ -1,0 +1,894 @@
+{
+  "color": {
+    "text": {
+      "success": {
+        "value": "#16a34a",
+        "type": "color"
+      },
+      "error": {
+        "value": "#b91c1c",
+        "type": "color"
+      },
+      "warning": {
+        "value": "#a16207",
+        "type": "color"
+      },
+      "brand": {
+        "value": "#ed6653",
+        "type": "color",
+        "description": "브랜드를 나타내는 텍스트 컬러에서 사용됩니다."
+      },
+      "bold": {
+        "value": "#0f172a",
+        "type": "color",
+        "description": "메인 텍스트에 쓰입니다. 헤더나 본문, 프로필 이름과 같이 잘 보여야 하는 텍스트의 컬러로 쓰입니다."
+      },
+      "subtle": {
+        "value": "#334155",
+        "type": "color",
+        "description": "secoundary에 속한 정보를 보여주는 텍스트의 경우에 쓰입니다. 레이블, 캡션 정보, 부제목과 같습니다."
+      },
+      "subtler": {
+        "value": "#64748b",
+        "type": "color",
+        "description": "optional에 속한 정보를 보여주는 텍스트의 경우에 쓰입니다."
+      },
+      "subtlest": {
+        "value": "#94a3b8",
+        "type": "color",
+        "description": "강조되지 않아도 되는 정보 혹은 텍스트의 disabled, inabled 상태를 표현할 때 사용합니다."
+      },
+      "placeholder": {
+        "value": "#94a3b8",
+        "type": "color",
+        "description": "text에서 Placeholder를 표현하는 색상입니다."
+      },
+      "inverse": {
+        "value": "#ffffff",
+        "type": "color"
+      },
+      "button": {
+        "primary": {
+          "value": "#334155",
+          "type": "color",
+          "description": "button의 primary에 속하는 텍스트 색상입니다."
+        },
+        "completed": {
+          "value": "#64748b",
+          "type": "color"
+        },
+        "disabled": {
+          "value": "#94a3b8",
+          "type": "color"
+        },
+        "destructive": {
+          "value": "#ef4444",
+          "type": "color"
+        }
+      }
+    },
+    "background": {
+      "button": {
+        "destructive": {
+          "enabled": {
+            "value": "#ef4444",
+            "type": "color",
+            "description": "delete와 같은 버튼을 사용할 때 쓰는 배경색입니다."
+          },
+          "hover": {
+            "value": "#dc2626",
+            "type": "color"
+          }
+        },
+        "disabled": {
+          "value": "#f1f5f9",
+          "type": "color",
+          "description": "button의 primary, secondary의 disabled 상태를 표현하는 bg 컬러입니다."
+        },
+        "completed": {
+          "value": "#e2e8f0",
+          "type": "color",
+          "description": "button의 primary, secondary의 completed 상태를 표현하는 bg 컬러입니다."
+        },
+        "hover": {
+          "value": "#e2e8f0",
+          "type": "color",
+          "description": "button의 primary, secondary의 hover 상태를 표현하는 bg 컬러입니다."
+        },
+        "primary": {
+          "tint": {
+            "enabled": {
+              "value": "#f1f5f9",
+              "type": "color"
+            },
+            "hover": {
+              "value": "#e2e8f0",
+              "type": "color"
+            }
+          },
+          "bold": {
+            "hover": {
+              "value": "#1e293b",
+              "type": "color",
+              "description": "button의 primary의 hover 상태를 표현하는 bg 컬러입니다."
+            },
+            "enabled": {
+              "value": "#334155",
+              "type": "color",
+              "description": "button의 primary의 solid 타입을 나타내는 bg컬러입니다."
+            }
+          }
+        }
+      },
+      "selected": {
+        "value": "#f1f5f9",
+        "type": "color",
+        "description": "default의 배경색을 지닌 경우에 selected가 일어날 시 보이는 배경 색상입니다."
+      },
+      "hover": {
+        "value": "#f8fafc",
+        "type": "color",
+        "description": "default의 배경색을 지닌 경우에 hover가 일어날 시 보이는 배경 색상입니다."
+      },
+      "badge": {
+        "unread": {
+          "value": "#ef4444",
+          "type": "color"
+        }
+      },
+      "tooltip": {
+        "value": "#0f172a",
+        "type": "color"
+      },
+      "error": {
+        "value": "#b91c1c",
+        "type": "color"
+      }
+    },
+    "white": {
+      "value": "#ffffff",
+      "type": "color"
+    },
+    "black": {
+      "value": "#000000",
+      "type": "color"
+    },
+    "coral": {
+      "50": {
+        "value": "#fdf4f3",
+        "type": "color"
+      },
+      "100": {
+        "value": "#ffedee",
+        "type": "color"
+      },
+      "200": {
+        "value": "#fdd1cb",
+        "type": "color"
+      },
+      "300": {
+        "value": "#f7b4aa",
+        "type": "color"
+      },
+      "400": {
+        "value": "#F39B8E",
+        "type": "color"
+      },
+      "500": {
+        "value": "#ef7b6a",
+        "type": "color"
+      },
+      "600": {
+        "value": "#ed6653",
+        "type": "color"
+      },
+      "700": {
+        "value": "#e1432e",
+        "type": "color"
+      },
+      "800": {
+        "value": "#be1e08",
+        "type": "color"
+      },
+      "900": {
+        "value": "#7a2d22",
+        "type": "color"
+      }
+    },
+    "teal": {
+      "50": {
+        "value": "#f0fdfa",
+        "type": "color"
+      },
+      "100": {
+        "value": "#d5f4f2",
+        "type": "color"
+      },
+      "200": {
+        "value": "#99f6e4",
+        "type": "color"
+      },
+      "300": {
+        "value": "#5EEAD4",
+        "type": "color"
+      },
+      "400": {
+        "value": "#2DD4BF",
+        "type": "color"
+      },
+      "500": {
+        "value": "#14B8A6",
+        "type": "color"
+      },
+      "600": {
+        "value": "#0D9488",
+        "type": "color"
+      },
+      "700": {
+        "value": "#0F766E",
+        "type": "color"
+      },
+      "800": {
+        "value": "#115E59",
+        "type": "color"
+      },
+      "900": {
+        "value": "#134e4a",
+        "type": "color"
+      }
+    },
+    "red": {
+      "50": {
+        "value": "#fef2f2",
+        "type": "color"
+      },
+      "100": {
+        "value": "#fee2e2",
+        "type": "color"
+      },
+      "200": {
+        "value": "#fecaca",
+        "type": "color"
+      },
+      "300": {
+        "value": "#fca5a5",
+        "type": "color"
+      },
+      "400": {
+        "value": "#f87171",
+        "type": "color"
+      },
+      "500": {
+        "value": "#ef4444",
+        "type": "color"
+      },
+      "600": {
+        "value": "#dc2626",
+        "type": "color"
+      },
+      "700": {
+        "value": "#b91c1c",
+        "type": "color"
+      },
+      "800": {
+        "value": "#991b1b",
+        "type": "color"
+      },
+      "900": {
+        "value": "#7f1d1d",
+        "type": "color"
+      }
+    },
+    "yellow": {
+      "50": {
+        "value": "#fefce8",
+        "type": "color"
+      },
+      "100": {
+        "value": "#fef9c3",
+        "type": "color"
+      },
+      "200": {
+        "value": "#fef08a",
+        "type": "color"
+      },
+      "300": {
+        "value": "#fde047",
+        "type": "color"
+      },
+      "400": {
+        "value": "#facc15",
+        "type": "color"
+      },
+      "500": {
+        "value": "#eab308",
+        "type": "color"
+      },
+      "600": {
+        "value": "#ca8a04",
+        "type": "color"
+      },
+      "700": {
+        "value": "#a16207",
+        "type": "color"
+      },
+      "800": {
+        "value": "#854d0e",
+        "type": "color"
+      },
+      "900": {
+        "value": "#713f12",
+        "type": "color"
+      }
+    },
+    "blue": {
+      "50": {
+        "value": "#eff6ff",
+        "type": "color"
+      },
+      "100": {
+        "value": "#dbeafe",
+        "type": "color"
+      },
+      "200": {
+        "value": "#bfdbfe",
+        "type": "color"
+      },
+      "300": {
+        "value": "#93c5fd",
+        "type": "color"
+      },
+      "400": {
+        "value": "#60a5fa",
+        "type": "color"
+      },
+      "500": {
+        "value": "#3b82f6",
+        "type": "color"
+      },
+      "600": {
+        "value": "#2563eb",
+        "type": "color"
+      },
+      "700": {
+        "value": "#1d4ed8",
+        "type": "color"
+      },
+      "800": {
+        "value": "#1e40af",
+        "type": "color"
+      },
+      "900": {
+        "value": "#1e3a8a",
+        "type": "color"
+      }
+    },
+    "indigo": {
+      "50": {
+        "value": "#eef2ff",
+        "type": "color"
+      },
+      "100": {
+        "value": "#e0e7ff",
+        "type": "color"
+      },
+      "200": {
+        "value": "#c7d2fe",
+        "type": "color"
+      },
+      "300": {
+        "value": "#a5b4fc",
+        "type": "color"
+      },
+      "400": {
+        "value": "#818cf8",
+        "type": "color"
+      },
+      "500": {
+        "value": "#6366f1",
+        "type": "color"
+      },
+      "600": {
+        "value": "#4f46e5",
+        "type": "color"
+      },
+      "700": {
+        "value": "#4338ca",
+        "type": "color"
+      },
+      "800": {
+        "value": "#3730a3",
+        "type": "color"
+      },
+      "900": {
+        "value": "#312e81",
+        "type": "color"
+      }
+    },
+    "purple": {
+      "50": {
+        "value": "#faf5ff",
+        "type": "color"
+      },
+      "100": {
+        "value": "#f3e8ff",
+        "type": "color"
+      },
+      "200": {
+        "value": "#e9d5ff",
+        "type": "color"
+      },
+      "300": {
+        "value": "#d8b4fe",
+        "type": "color"
+      },
+      "400": {
+        "value": "#c084fc",
+        "type": "color"
+      },
+      "500": {
+        "value": "#a855f7",
+        "type": "color"
+      },
+      "600": {
+        "value": "#9333ea",
+        "type": "color"
+      },
+      "700": {
+        "value": "#7e22ce",
+        "type": "color"
+      },
+      "800": {
+        "value": "#6b21a8",
+        "type": "color"
+      },
+      "900": {
+        "value": "#581c87",
+        "type": "color"
+      }
+    },
+    "magenta": {
+      "50": {
+        "value": "#fdf4ff",
+        "type": "color"
+      },
+      "100": {
+        "value": "#fae8ff",
+        "type": "color"
+      },
+      "200": {
+        "value": "#f5d0fe",
+        "type": "color"
+      },
+      "300": {
+        "value": "#f0abfc",
+        "type": "color"
+      },
+      "400": {
+        "value": "#e879f9",
+        "type": "color"
+      },
+      "500": {
+        "value": "#d946ef",
+        "type": "color"
+      },
+      "600": {
+        "value": "#c026d3",
+        "type": "color"
+      },
+      "700": {
+        "value": "#a21caf",
+        "type": "color"
+      },
+      "800": {
+        "value": "#86198f",
+        "type": "color"
+      },
+      "900": {
+        "value": "#701A75",
+        "type": "color"
+      }
+    },
+    "slate": {
+      "50": {
+        "value": "#f8fafc",
+        "type": "color"
+      },
+      "100": {
+        "value": "#f1f5f9",
+        "type": "color"
+      },
+      "200": {
+        "value": "#e2e8f0",
+        "type": "color"
+      },
+      "300": {
+        "value": "#cbd5e1",
+        "type": "color"
+      },
+      "400": {
+        "value": "#94a3b8",
+        "type": "color"
+      },
+      "500": {
+        "value": "#64748b",
+        "type": "color"
+      },
+      "600": {
+        "value": "#475569",
+        "type": "color"
+      },
+      "700": {
+        "value": "#334155",
+        "type": "color"
+      },
+      "800": {
+        "value": "#1e293b",
+        "type": "color"
+      },
+      "900": {
+        "value": "#0f172a",
+        "type": "color"
+      }
+    },
+    "green": {
+      "50": {
+        "value": "#f0fdf4",
+        "type": "color"
+      },
+      "100": {
+        "value": "#dcfce7",
+        "type": "color"
+      },
+      "200": {
+        "value": "#bbf7d0",
+        "type": "color"
+      },
+      "300": {
+        "value": "#86efac",
+        "type": "color"
+      },
+      "400": {
+        "value": "#4ade80",
+        "type": "color"
+      },
+      "500": {
+        "value": "#22c55e",
+        "type": "color"
+      },
+      "600": {
+        "value": "#16a34a",
+        "type": "color"
+      },
+      "700": {
+        "value": "#15803d",
+        "type": "color"
+      },
+      "800": {
+        "value": "#166534",
+        "type": "color"
+      },
+      "900": {
+        "value": "#14532d",
+        "type": "color"
+      }
+    }
+  },
+  "border": {
+    "color": {
+      "button": {
+        "completed": {
+          "value": {
+            "color": "#64748b",
+            "width": 1,
+            "style": "solid"
+          },
+          "type": "border"
+        },
+        "disabled": {
+          "value": {
+            "color": "#cbd5e1",
+            "width": 1,
+            "style": "solid"
+          },
+          "type": "border"
+        },
+        "secondary": {
+          "enabled": {
+            "value": {
+              "color": "#0F766E",
+              "width": 1,
+              "style": "solid"
+            },
+            "type": "border"
+          },
+          "hover": {
+            "value": {
+              "color": "#115E59",
+              "width": 1,
+              "style": "solid"
+            },
+            "type": "border"
+          }
+        },
+        "primary": {
+          "enabled": {
+            "value": {
+              "color": "#334155",
+              "width": 1,
+              "style": "solid"
+            },
+            "type": "border"
+          },
+          "hover": {
+            "value": {
+              "color": "#1e293b",
+              "width": 1,
+              "style": "solid"
+            },
+            "type": "border"
+          }
+        }
+      },
+      "onpost": {
+        "value": {
+          "color": "#cbd5e1",
+          "width": 1,
+          "style": "solid"
+        },
+        "type": "border"
+      },
+      "onwhite": {
+        "value": {
+          "color": "#e2e8f0",
+          "width": 1,
+          "style": "solid"
+        },
+        "type": "border"
+      }
+    }
+  },
+  "elevation": {
+    "shadow": {
+      "small": {
+        "value": {
+          "x": 0,
+          "y": 2,
+          "blur": 4,
+          "spread": 0,
+          "color": "#64748b, 0.10",
+          "type": "dropShadow"
+        },
+        "type": "boxShadow",
+        "description": "elevation 2dp에 해당됩니다."
+      },
+      "medium": {
+        "value": {
+          "x": 0,
+          "y": 4,
+          "blur": 6,
+          "spread": 0,
+          "color": "#64748b, 0.12",
+          "type": "dropShadow"
+        },
+        "type": "boxShadow",
+        "description": "elevation 4dp에 해당됩니다."
+      },
+      "large": {
+        "value": {
+          "x": 0,
+          "y": 8,
+          "blur": 12,
+          "spread": 0,
+          "color": "#64748b, 0.14",
+          "type": "dropShadow"
+        },
+        "type": "boxShadow",
+        "description": "elevation 8dp에 해당됩니다."
+      },
+      "xlarge": {
+        "value": {
+          "x": 0,
+          "y": 16,
+          "blur": 20,
+          "spread": 0,
+          "color": "#64748b, 0.16",
+          "type": "dropShadow"
+        },
+        "type": "boxShadow",
+        "description": "elevation 16dp에 해당됩니다."
+      },
+      "2xlarge": {
+        "value": {
+          "x": 0,
+          "y": 25,
+          "blur": 50,
+          "spread": 0,
+          "color": "#64748b, 0.24",
+          "type": "dropShadow"
+        },
+        "type": "boxShadow",
+        "description": "elevation 24dp에 해당됩니다."
+      }
+    }
+  },
+  "font-size": {
+    "xs": {
+      "value": "12px",
+      "type": "fontSizes",
+      "description": "font-size-12-px"
+    },
+    "sm": {
+      "value": "14px",
+      "type": "fontSizes",
+      "description": "font-size-14px"
+    },
+    "base": {
+      "value": "16px",
+      "type": "fontSizes",
+      "description": "font-size-16px"
+    },
+    "lg": {
+      "value": "18px",
+      "type": "fontSizes",
+      "description": "font-size-18px"
+    },
+    "xl": {
+      "value": "20px",
+      "type": "fontSizes",
+      "description": "font-size-20px"
+    },
+    "2xl": {
+      "value": "24px",
+      "type": "fontSizes",
+      "description": "font-size-24px"
+    },
+    "3xl": {
+      "value": "30px",
+      "type": "fontSizes",
+      "description": "font-size-30px"
+    },
+    "4xl": {
+      "value": "36px",
+      "type": "fontSizes",
+      "description": "font-size-36px"
+    }
+  },
+  "font-weight": {
+    "normal": {
+      "value": 400,
+      "type": "fontWeights",
+      "description": "font-weight: 400"
+    },
+    "semibold": {
+      "value": 600,
+      "type": "fontWeights",
+      "description": "font-weight: 600"
+    },
+    "bold": {
+      "value": 700,
+      "type": "fontWeights",
+      "description": "font-weight: 700;"
+    }
+  },
+  "line-height": {
+    "tight": {
+      "value": 1.25,
+      "type": "lineHeights",
+      "description": "line-height: 1.25"
+    },
+    "normal": {
+      "value": 1.5,
+      "type": "lineHeights",
+      "description": "Line-Height: 1.5"
+    },
+    "loose": {
+      "value": 2,
+      "type": "lineHeights",
+      "description": "Line-Height: 2"
+    }
+  },
+  "font-family": {
+    "Pretendard": {
+      "value": "Pretendard",
+      "type": "fontFamilies",
+      "description": "font-family: Pretendard"
+    }
+  },
+  "font": {
+    "headline": {
+      "large": {
+        "bold": {
+          "value": {
+            "fontFamily": "Pretendard",
+            "fontWeight": 700,
+            "lineHeight": 2,
+            "fontSize": "30px"
+          },
+          "type": "typography",
+          "description": "- 하나의 스크린에 하나만 존재할 수 있는 타이포 타입.\n- 스크린 안에서 가장 큰 위계를 지닌다."
+        }
+      },
+      "medium": {
+        "bold": {
+          "value": {
+            "fontFamily": "Pretendard",
+            "fontWeight": 700,
+            "lineHeight": 2,
+            "fontSize": "24px"
+          },
+          "type": "typography"
+        }
+      },
+      "small": {
+        "bold": {
+          "value": {
+            "fontFamily": "Pretendard",
+            "fontWeight": 700,
+            "lineHeight": 1.5,
+            "fontSize": "20px"
+          },
+          "type": "typography"
+        }
+      }
+    },
+    "title": {
+      "large": {
+        "bold": {
+          "value": {
+            "fontFamily": "Pretendard",
+            "fontWeight": 700,
+            "fontSize": "30px",
+            "lineHeight": 1.5
+          },
+          "type": "typography",
+          "description": "-하나의 스크린에 여러번 존재할 수 있음.\n-스크린 안에서 헤드라인을 제외한 타이포그래피 중 가장 큰 단위의 위계를 지닌다."
+        }
+      },
+      "medium": {
+        "bold": {
+          "value": {
+            "fontFamily": "Pretendard",
+            "fontWeight": 700,
+            "fontSize": "24px",
+            "lineHeight": 1.5
+          },
+          "type": "typography",
+          "description": "- 하나의 스크린에 여러번 존재할 수 있음.\n- 스크린 안에서 헤드라인을 제외한 타이포그래피 중 가장 큰 단위의 위계를 지닌다."
+        }
+      },
+      "small": {
+        "bold": {
+          "value": {
+            "fontFamily": "Pretendard",
+            "fontWeight": 700,
+            "fontSize": "20px",
+            "lineHeight": 1.5
+          },
+          "type": "typography",
+          "description": "- 하나의 스크린에 여러번 존재할 수 있음.\n- 스크린 안에서 헤드라인을 제외한 타이포그래피 중 가장 큰 단위의 위계를 지닌다."
+        }
+      },
+      "xsmall": {
+        "bold": {
+          "value": {
+            "fontFamily": "Pretendard",
+            "fontWeight": 700,
+            "fontSize": "18px",
+            "lineHeight": 1.5
+          },
+          "type": "typography",
+          "description": "- 하나의 스크린에 여러번 존재할 수 있음.\n- 스크린 안에서 헤드라인을 제외한 타이포그래피 중 가장 큰 단위의 위계를 지닌다."
+        }
+      }
+    }
+  },
+  "spacing": {
+    "vertical": {
+      "beween-text": {
+        "value": "8px",
+        "type": "spacing"
+      }
+    }
+  }
+}

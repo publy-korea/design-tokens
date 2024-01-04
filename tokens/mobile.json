@@ -721,79 +721,163 @@
       }
     }
   },
-  "text": {
+  "font-size": {
     "xs": {
-      "value": "12pt",
+      "value": "12px",
       "type": "fontSizes",
-      "description": "font-size-12-pt"
+      "description": "font-size-12-px"
     },
     "sm": {
-      "value": "14pt",
+      "value": "14px",
       "type": "fontSizes",
-      "description": "font-size-14pt"
+      "description": "font-size-14px"
     },
     "base": {
-      "value": "16pt",
+      "value": "16px",
       "type": "fontSizes",
-      "description": "font-size-16pt"
+      "description": "font-size-16px"
     },
     "lg": {
-      "value": "18pt",
+      "value": "18px",
       "type": "fontSizes",
-      "description": "font-size-18pt"
+      "description": "font-size-18px"
     },
     "xl": {
-      "value": "20pt",
+      "value": "20px",
       "type": "fontSizes",
-      "description": "font-size-20pt"
+      "description": "font-size: 20px"
     },
     "2xl": {
-      "value": "24pt",
+      "value": "24px",
       "type": "fontSizes",
-      "description": "font-size-24pt"
+      "description": "font-size-24px"
     },
     "3xl": {
-      "value": "30pt",
+      "value": "30px",
       "type": "fontSizes",
-      "description": "font-size-30pt"
+      "description": "font-size-30px"
     },
     "4xl": {
-      "value": "36pt",
+      "value": "36px",
       "type": "fontSizes",
-      "description": "font-size-36pt"
+      "description": "font-size-36px"
+    }
+  },
+  "font-weight": {
+    "normal": {
+      "value": 400,
+      "type": "fontWeights",
+      "description": "font-weight: 400"
     },
-    "weight": {
-      "normal": {
-        "value": 400,
-        "type": "fontWeights",
-        "description": "font-weight: 400"
+    "semibold": {
+      "value": 600,
+      "type": "fontWeights",
+      "description": "font-weight: 600"
+    },
+    "bold": {
+      "value": 700,
+      "type": "fontWeights",
+      "description": "font-weight: 700;"
+    }
+  },
+  "line-height": {
+    "tight": {
+      "value": 1.25,
+      "type": "lineHeights",
+      "description": "line-height: 1.25"
+    },
+    "normal": {
+      "value": 1.5,
+      "type": "lineHeights",
+      "description": "Line-Height: 1.5"
+    },
+    "loose": {
+      "value": 2,
+      "type": "lineHeights",
+      "description": "Line-Height: 2"
+    }
+  },
+  "font-family": {
+    "Pretendard": {
+      "value": "Pretendard",
+      "type": "fontFamilies"
+    }
+  },
+  "font": {
+    "headline": {
+      "large": {
+        "bold": {
+          "value": {
+            "fontFamily": "Pretendard",
+            "fontWeight": 700,
+            "lineHeight": 1.5,
+            "fontSize": "24px"
+          },
+          "type": "typography",
+          "description": "- 하나의 스크린에 하나만 존재할 수 있는 타이포 타입.\n- 스크린 안에서 가장 큰 위계를 지닌다."
+        }
       },
-      "semibold": {
-        "value": 600,
-        "type": "fontWeights",
-        "description": "font-weight: 600"
+      "medium": {
+        "bold": {
+          "value": {
+            "fontFamily": "Pretendard",
+            "fontWeight": 700,
+            "lineHeight": 1.5,
+            "fontSize": "20px"
+          },
+          "type": "typography",
+          "description": "- 하나의 스크린에 하나만 존재할 수 있는 타이포 타입.\n- 스크린 안에서 가장 큰 위계를 지닌다."
+        }
       },
-      "bold": {
-        "value": 800,
-        "type": "fontWeights",
-        "description": "font-weight: 800;"
+      "small": {
+        "bold": {
+          "value": {
+            "fontFamily": "Pretendard",
+            "fontWeight": 700,
+            "lineHeight": 1.5,
+            "fontSize": "18px"
+          },
+          "type": "typography",
+          "description": "- 하나의 스크린에 하나만 존재할 수 있는 타이포 타입.\n- 스크린 안에서 가장 큰 위계를 지닌다."
+        }
       }
     },
-    "leading": {
-      "tight": {
-        "value": "1.25rem",
-        "type": "lineHeights",
-        "description": "line-height: 1.25rem"
+    "title": {
+      "large": {
+        "bold": {
+          "value": {
+            "fontFamily": "Pretendard",
+            "fontWeight": 700,
+            "fontSize": "24px",
+            "lineHeight": 1.5
+          },
+          "type": "typography",
+          "description": "- 하나의 스크린에 여러번 존재할 수 있음.\n- 스크린 안에서 헤드라인을 제외한 타이포그래피 중 가장 큰 단위의 위계를 지닌다."
+        }
       },
-      "normal": {
-        "value": "1.5rem",
-        "type": "lineHeights",
-        "description": "Line-Height: 1.5rem;"
+      "medium": {
+        "bold": {
+          "value": {
+            "fontFamily": "Pretendard",
+            "fontWeight": 700,
+            "fontSize": "20px",
+            "lineHeight": 1.5
+          },
+          "type": "typography",
+          "description": "- 하나의 스크린에 여러번 존재할 수 있음.\n- 스크린 안에서 헤드라인을 제외한 타이포그래피 중 가장 큰 단위의 위계를 지닌다."
+        }
       },
-      "loose": {
-        "value": "2rem",
-        "type": "lineHeights",
-        "description": "Line-Height: 2rem;"
+      "small": {
+        "bold": {
+          "value": {
+            "fontFamily": "Pretendard",
+            "fontWeight": 700,
+            "fontSize": "18px",
+            "lineHeight": 1.5
+          },
+          "type": "typography",
+          "description": "- 하나의 스크린에 여러번 존재할 수 있음.\n- 스크린 안에서 헤드라인을 제외한 타이포그래피 중 가장 큰 단위의 위계를 지닌다."
+        }
       }
     }
   },
