@@ -12,7 +12,9 @@
           "enabled": "#334155",
           "hover": "#1e293b"
         }
-      }
+      },
+      "onpost": "#cbd5e1",
+      "onwhite": "#e2e8f0"
     }
   }
 }

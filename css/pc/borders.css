@@ -1,0 +1,10 @@
+.theme-pc {
+  --border-color-button-completed: solid 1px #64748b;
+  --border-color-button-disabled: solid 1px #cbd5e1;
+  --border-color-button-secondary-enabled: solid 1px #0F766E;
+  --border-color-button-secondary-hover: solid 1px #115E59;
+  --border-color-button-primary-enabled: solid 1px #334155;
+  --border-color-button-primary-hover: solid 1px #1e293b;
+  --border-color-onpost: solid 1px #cbd5e1;
+  --border-color-onwhite: solid 1px #e2e8f0;
+}

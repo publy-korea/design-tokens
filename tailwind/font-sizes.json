@@ -1,0 +1,10 @@
+{
+  "font-size-xs": "var(--font-size-xs, 12px)",
+  "font-size-sm": "var(--font-size-sm, 14px)",
+  "font-size-base": "var(--font-size-base, 16px)",
+  "font-size-lg": "var(--font-size-lg, 18px)",
+  "font-size-xl": "var(--font-size-xl, 20px)",
+  "font-size-2xl": "var(--font-size-2xl, 24px)",
+  "font-size-3xl": "var(--font-size-3xl, 30px)",
+  "font-size-4xl": "var(--font-size-4xl, 36px)"
+}
