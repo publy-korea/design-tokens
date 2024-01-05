@@ -14,7 +14,10 @@
         }
       },
       "onpost": "var(--border-color-onpost-color, #cbd5e1)",
-      "onwhite": "var(--border-color-onwhite-color, #e2e8f0)"
+      "onwhite": "var(--border-color-onwhite-color, #e2e8f0)",
+      "input": {
+        "error": "var(--border-color-input-error-color, #b91c1c)"
+      }
     }
   }
 }

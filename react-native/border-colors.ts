@@ -1,6 +1,6 @@
 /**
  * 직접 수정하지 마세요
- * Thu Jan 04 2024 10:06:27 GMT+0000 (Coordinated Universal Time)에 생성됨
+ * Fri Jan 05 2024 08:18:11 GMT+0000 (Coordinated Universal Time)에 생성됨
  */
 
 export default {
@@ -11,5 +11,6 @@ export default {
   "borderColorButtonPrimaryEnabled": "#334155",
   "borderColorButtonPrimaryHover": "#1e293b",
   "borderColorOnpost": "#cbd5e1",
-  "borderColorOnwhite": "#e2e8f0"
+  "borderColorOnwhite": "#e2e8f0",
+  "borderColorInputError": "#b91c1c"
 } as const

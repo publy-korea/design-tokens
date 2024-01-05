@@ -1,6 +1,6 @@
 /**
  * 직접 수정하지 마세요
- * Thu Jan 04 2024 10:06:27 GMT+0000 (Coordinated Universal Time)에 생성됨
+ * Fri Jan 05 2024 08:18:11 GMT+0000 (Coordinated Universal Time)에 생성됨
  */
 
 export default {
@@ -133,6 +133,5 @@ export default {
   "colorGreen600": "#16a34a",
   "colorGreen700": "#15803d",
   "colorGreen800": "#166534",
-  "colorGreen900": "#14532d",
-  "colorBorderInputError": "#b91c1c"
+  "colorGreen900": "#14532d"
 } as const

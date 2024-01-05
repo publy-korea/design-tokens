@@ -645,6 +645,14 @@
           "style": "solid"
         },
         "type": "border"
+      },
+      "input": {
+        "error": {
+          "value": {
+            "color": "#b91c1c"
+          },
+          "type": "border"
+        }
       }
     }
   },

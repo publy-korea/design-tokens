@@ -572,15 +572,6 @@
         "value": "#14532d",
         "type": "color"
       }
-    },
-    "border": {
-      "input": {
-        "error": {
-          "value": "#b91c1c",
-          "type": "color",
-          "description": "인풋 에러 케이스에 사용되는 보더 컬러입니다."
-        }
-      }
     }
   },
   "border": {
@@ -654,6 +645,14 @@
           "style": "solid"
         },
         "type": "border"
+      },
+      "input": {
+        "error": {
+          "value": {
+            "color": "#b91c1c"
+          },
+          "type": "border"
+        }
       }
     }
   },
