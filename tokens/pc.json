@@ -890,5 +890,15 @@
         "type": "spacing"
       }
     }
+  },
+  "PC": {
+    "spacing": {
+      "horizontal": {
+        "around-screen": {
+          "value": "24px",
+          "type": "spacing"
+        }
+      }
+    }
   }
 }
