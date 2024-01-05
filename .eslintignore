@@ -1,0 +1,15 @@
+dist
+*.md
+node_modules
+.history
+.vscode
+coverage
+
+!react-native
+react-native/*
+!react-native/styles.ts
+
+!tailwind
+tailwind/*
+!tailwind/plugins
+

@@ -1,14 +1,17 @@
-const { filters, tailwindThemeFormatter, cssVariableFormatter, reactNativeThemeFormatter } = require("./lib/style-dictionary")
+import { Config } from 'style-dictionary/types/Config';
+import {
+  cssVariableFormatter,
+  filters,
+  tailwindThemeFormatter,
+} from './lib/style-dictionary-helpers';
 
-const MODE = 'mobile'
+const MODE = 'pc';
 
-/** @type {import('style-dictionary/types/Config').Config} */
-module.exports = {
+const config: Config = {
   source: [`tokens/${MODE}.json`],
   format: {
     ...tailwindThemeFormatter,
     ...cssVariableFormatter(MODE),
-    ...reactNativeThemeFormatter
   },
   platforms: {
     css: {
@@ -62,21 +65,59 @@ module.exports = {
         },
       ],
     },
-    rn: {
-      transformGroup:'react-native',
-      buildPath: './react-native/',
+    tailwind: {
+      transforms: ['attribute/cti', 'name/cti/kebab'],
+      buildPath: './tailwind/',
       files: [
         {
           filter: filters.isColor,
-          destination: 'colors.ts',
-          format: 'createReactNativeThemeColor',
+          destination: 'colors.json',
+          format: 'createTailwindThemeColor',
         },
         {
           filter: filters.isBorder,
-          destination: 'border-colors.ts',
-          format: 'createReactNativeThemeBorderColor',
+          destination: 'borders.json',
+          format: 'createTailwindThemeBorder',
+        },
+        {
+          filter: filters.isBorder,
+          destination: 'border-colors.json',
+          format: 'createTailwindThemeBorderColor',
+        },
+        {
+          filter: filters.isBoxShadow,
+          destination: 'box-shadows.json',
+          format: 'createTailwindThemeBoxShadow',
+        },
+        {
+          filter: filters.isFont,
+          destination: 'fonts.json',
+          format: 'createTailwindThemeFont',
+        },
+        {
+          filter: filters.isFontSize,
+          destination: `font-sizes.json`,
+          format: 'createTailwindThemeFontSize',
+        },
+        {
+          filter: filters.isFontWeight,
+          destination: `font-weights.json`,
+          format: 'createTailwindThemeFontWeight',
+        },
+        {
+          filter: filters.isLineHeight,
+          destination: `line-heights.json`,
+          format: 'createTailwindThemeLineHeight',
+        },
+        {
+          filter: filters.isFontFamily,
+          destination: `font-families.json`,
+          format: 'createTailwindThemeFontFamily',
         },
       ],
     },
   },
 };
+
+// cjs export for style-dictionary cli
+export = config;
