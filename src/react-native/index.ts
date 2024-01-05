@@ -2,6 +2,8 @@ import mapValues from '../utils/map-values';
 import borderColors from './border-colors';
 import colors from './colors';
 
+export const colorValues = colors;
+
 export const bg = mapValues(colors, value => ({ backgroundColor: value }));
 
 export const border = {
@@ -32,7 +34,7 @@ export const text = {
   right: { textAlign: 'right' },
   center: { textAlign: 'center' },
   justify: { textAlign: 'justify' },
-  color: mapValues(colors, value => ({color: value})),
+  color: mapValues(colors, value => ({ color: value })),
   decoration: {
     none: { textDecorationLine: 'none' },
     underline: { textDecorationLine: 'underline' },
