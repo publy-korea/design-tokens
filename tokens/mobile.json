@@ -881,15 +881,9 @@
       }
     },
     "horizontal": {
-      "screen-mobile": {
+      "around-screen": {
         "value": "16px",
-        "type": "spacing",
-        "description": "모바일 스크린의 px 값입니다."
-      },
-      "screen-pc": {
-        "value": "24px",
-        "type": "spacing",
-        "description": "PC 스크린의 px값입니다."
+        "type": "spacing"
       }
     }
   }
