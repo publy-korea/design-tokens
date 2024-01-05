@@ -4,12 +4,12 @@ import {
   filters,
   reactNativeThemeFormatter,
   tailwindThemeFormatter,
-} from './lib/style-dictionary-helpers';
+} from './src/utils/style-dictionary-helpers';
 
 const MODE = 'mobile';
 
 const config: Config = {
-  source: [`tokens/${MODE}.json`],
+  source: [`transformed/${MODE}.json`],
   format: {
     ...tailwindThemeFormatter,
     ...cssVariableFormatter(MODE),
@@ -18,7 +18,7 @@ const config: Config = {
   platforms: {
     css: {
       transforms: ['attribute/cti', 'name/cti/kebab'],
-      buildPath: './css/',
+      buildPath: './src/css/',
       files: [
         {
           filter: filters.isColor,
@@ -69,7 +69,7 @@ const config: Config = {
     },
     rn: {
       transformGroup: 'react-native',
-      buildPath: './react-native/',
+      buildPath: './src/react-native/',
       files: [
         {
           filter: filters.isColor,

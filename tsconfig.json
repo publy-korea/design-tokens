@@ -14,13 +14,13 @@
     "**/*.ts",
     "**/*.js",
     ".eslintrc.json",
-    "lib/**/*.ts",
-    "tailwind/plugins/*.ts",
+    "src/utils/**/*.ts",
+    "src/tailwind/plugins/*.ts",
   ],
   "exclude": [
     "node_modules",
     "dist",
-    "tailwind/**/*",
-    "tailwind.config.js"
+    "src/tailwind/**/*",
+    "main/web/tailwind-preset.config.js"
   ]
 }

@@ -1,6 +1,6 @@
 /**
  * 직접 수정하지 마세요
- * Fri Jan 05 2024 17:07:40 GMT+0900 (Korean Standard Time)에 생성됨
+ * Fri Jan 05 2024 19:01:57 GMT+0900 (Korean Standard Time)에 생성됨
  */
 
 export default {
