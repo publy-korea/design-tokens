@@ -8,15 +8,14 @@
     "npm": "9.5.x"
   },
   "scripts": {
-    "tsc": "rm -rf dist && tsc",
     "transform:mobile": "token-transformer tokens.json tokens/mobile.json Mobile",
     "transform:pc": "token-transformer tokens.json tokens/pc.json PC",
     "transform": "npm run transform:mobile && npm run transform:pc",
-    "style-dictionary:mobile": "style-dictionary build --config ./dist/style-dictionary.config.mobile.js",
-    "style-dictionary:pc": "style-dictionary build --config ./dist/style-dictionary.config.pc.js",
+    "style-dictionary:mobile": "tsc && style-dictionary build --config ./dist/style-dictionary.config.mobile.js",
+    "style-dictionary:pc": "tsc && style-dictionary build --config ./dist/style-dictionary.config.pc.js",
     "build:pc": "npm run transform:pc && npm run style-dictionary:pc",
     "build:mobile": "npm run transform:mobile && npm run style-dictionary:mobile",
-    "build": "tsc && npm run build:pc && npm run build:mobile",
+    "build": "npm run build:pc && npm run build:mobile",
     "test": "tailwindcss -c example/tailwind.config.js -i example/input.css -o example/output.css"
   },
   "repository": {
