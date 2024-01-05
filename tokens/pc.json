@@ -889,6 +889,12 @@
         "value": "8px",
         "type": "spacing"
       }
+    },
+    "horizontal": {
+      "around-screen": {
+        "value": "24px",
+        "type": "spacing"
+      }
     }
   },
   "sizing": {
