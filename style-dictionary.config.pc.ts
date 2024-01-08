@@ -3,12 +3,12 @@ import {
   cssVariableFormatter,
   filters,
   tailwindThemeFormatter,
-} from './lib/style-dictionary-helpers';
+} from './src/utils/style-dictionary-helpers';
 
 const MODE = 'pc';
 
 const config: Config = {
-  source: [`tokens/${MODE}.json`],
+  source: [`transformed/${MODE}.json`],
   format: {
     ...tailwindThemeFormatter,
     ...cssVariableFormatter(MODE),
@@ -16,7 +16,7 @@ const config: Config = {
   platforms: {
     css: {
       transforms: ['attribute/cti', 'name/cti/kebab'],
-      buildPath: './css/',
+      buildPath: './src/css/',
       files: [
         {
           filter: filters.isColor,
@@ -67,7 +67,7 @@ const config: Config = {
     },
     tailwind: {
       transforms: ['attribute/cti', 'name/cti/kebab'],
-      buildPath: './tailwind/',
+      buildPath: './src/tailwind/',
       files: [
         {
           filter: filters.isColor,

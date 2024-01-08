@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  presets: [require('../tailwind.config')],
+  presets: [require('../main/web/tailwind.config')],
   prefix: 'tw-',
   content: ['./example/index.html'],
 };
