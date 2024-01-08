@@ -7,5 +7,5 @@
   --border-color-button-primary-hover: solid 1px #1e293b;
   --border-color-onpost: solid 1px #cbd5e1;
   --border-color-onwhite: solid 1px #e2e8f0;
-  --border-color-input-error: undefined undefinedpx #b91c1c;
+  --border-color-input-error: solid 1px #b91c1c;
 }

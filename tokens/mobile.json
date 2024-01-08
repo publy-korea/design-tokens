@@ -649,7 +649,9 @@
       "input": {
         "error": {
           "value": {
-            "color": "#b91c1c"
+            "color": "#b91c1c",
+            "width": 1,
+            "style": "solid"
           },
           "type": "border"
         }
