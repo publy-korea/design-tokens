@@ -1,10 +1,15 @@
 import mapValues from '../utils/map-values';
-import borderColors from './border-colors';
+import borderOnlyColors from './border-colors';
 import colors from './colors';
 
 export const colorValues = colors;
 
 export const bg = mapValues(colors, value => ({ backgroundColor: value }));
+
+const borderColors = {
+  ...colors,
+  ...borderOnlyColors,
+}
 
 export const border = {
   color: mapValues(borderColors, value => ({
