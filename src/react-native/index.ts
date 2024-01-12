@@ -29,18 +29,18 @@ export const border = {
 }
 
 export const text = {
-  auto: { textAlign: 'auto' },
-  left: { textAlign: 'left' },
-  right: { textAlign: 'right' },
-  center: { textAlign: 'center' },
-  justify: { textAlign: 'justify' },
+  auto: { textAlign: 'auto' as const },
+  left: { textAlign: 'left' as const },
+  right: { textAlign: 'right' as const },
+  center: { textAlign: 'center' as const },
+  justify: { textAlign: 'justify' as const },
   color: mapValues(colors, value => ({ color: value })),
   decoration: {
-    none: { textDecorationLine: 'none' },
-    underline: { textDecorationLine: 'underline' },
-    solid: { textDecorationStyle: 'solid' },
-    double: { textDecorationStyle: 'double' },
-    dotted: { textDecorationStyle: 'dotted' },
-    dashed: { textDecorationStyle: 'dashed' },
+    none: { textDecorationLine: 'none' as const },
+    underline: { textDecorationLine: 'underline' as const },
+    solid: { textDecorationStyle: 'solid' as const },
+    double: { textDecorationStyle: 'double' as const },
+    dotted: { textDecorationStyle: 'dotted' as const },
+    dashed: { textDecorationStyle: 'dashed' as const },
   }
 }
