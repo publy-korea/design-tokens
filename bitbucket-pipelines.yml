@@ -14,40 +14,41 @@ pipelines:
             - npm run transform-icons
           artifacts:
             - icons/**
-      - step:
-          name: Push to RN Design System
-          condition:
-            changesets:
-              includePaths:
-                - .icona/icons.json
-          script:
-            - git clone https://x-token-auth:$ACCESS_TOKEN@bitbucket.org/publyproduct/rn-design-system.git target
-            - mkdir -p target/src/icons
-            - rm -rf target/src/icons/*
-            - cp -R icons/rn/* target/src/icons
-            - cd target
-            - git config user.email $BOT_EMAIL
-            - git add .
-            - git commit -a -m "[Updated Icons]"
-            - git push 
-            - cd .. 
-      - step:
-          name: Push to Web Design System
-          condition:
-            changesets:
-              includePaths:
-                - .icona/icons.json
-          script:
-            - git clone https://x-token-auth:$ACCESS_TOKEN@bitbucket.org/publyproduct/web-design-system.git target
-            - mkdir -p target/src/icons
-            - rm -rf target/src/icons/*
-            - cp -R icons/web/* target/src/icons
-            - cd target
-            - git config user.email $BOT_EMAIL
-            - git add .
-            - git commit -a -m "[Updated Icons]"
-            - git push 
-            - cd .. 
-      
-            
+      - parallel:
+        - step:
+            name: Push to RN Design System
+            condition:
+              changesets:
+                includePaths:
+                  - .icona/icons.json
+            script:
+              - git clone https://x-token-auth:$ACCESS_TOKEN@bitbucket.org/publyproduct/rn-design-system.git target
+              - mkdir -p target/src/icons
+              - rm -rf target/src/icons/*
+              - cp -R icons/rn/* target/src/icons
+              - cd target
+              - git config user.email $BOT_EMAIL
+              - git add .
+              - git commit -a -m "[Updated Icons]"
+              - git push 
+              - cd .. 
+        - step:
+            name: Push to Web Design System
+            condition:
+              changesets:
+                includePaths:
+                  - .icona/icons.json
+            script:
+              - git clone https://x-token-auth:$ACCESS_TOKEN@bitbucket.org/publyproduct/web-design-system.git target
+              - mkdir -p target/src/icons
+              - rm -rf target/src/icons/*
+              - cp -R icons/web/* target/src/icons
+              - cd target
+              - git config user.email $BOT_EMAIL
+              - git add .
+              - git commit -a -m "[Updated Icons]"
+              - git push 
+              - cd .. 
+        
+              
 
