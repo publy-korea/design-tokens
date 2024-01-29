@@ -23,11 +23,6 @@
         "type": "color",
         "description": "메인 텍스트에 쓰입니다. 헤더나 본문, 프로필 이름과 같이 잘 보여야 하는 텍스트의 컬러로 쓰입니다."
       },
-      "subtle": {
-        "value": "#334155",
-        "type": "color",
-        "description": "secoundary에 속한 정보를 보여주는 텍스트의 경우에 쓰입니다. 레이블, 캡션 정보, 부제목과 같습니다."
-      },
       "subtler": {
         "value": "#64748b",
         "type": "color",

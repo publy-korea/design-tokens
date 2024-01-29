@@ -6,7 +6,6 @@
       "warning": "var(--color-text-warning, #a16207)",
       "brand": "var(--color-text-brand, #ed6653)",
       "bold": "var(--color-text-bold, #0f172a)",
-      "subtle": "var(--color-text-subtle, #334155)",
       "subtler": "var(--color-text-subtler, #64748b)",
       "subtlest": "var(--color-text-subtlest, #94a3b8)",
       "placeholder": "var(--color-text-placeholder, #94a3b8)",

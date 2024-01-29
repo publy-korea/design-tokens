@@ -1,6 +1,6 @@
 /**
  * 직접 수정하지 마세요
- * Mon Jan 08 2024 05:19:53 GMT+0000 (Coordinated Universal Time)에 생성됨
+ * Mon Jan 29 2024 01:17:35 GMT+0000 (Coordinated Universal Time)에 생성됨
  */
 
 export default {
@@ -9,7 +9,6 @@ export default {
   "colorTextWarning": "#a16207",
   "colorTextBrand": "#ed6653",
   "colorTextBold": "#0f172a",
-  "colorTextSubtle": "#334155",
   "colorTextSubtler": "#64748b",
   "colorTextSubtlest": "#94a3b8",
   "colorTextPlaceholder": "#94a3b8",
