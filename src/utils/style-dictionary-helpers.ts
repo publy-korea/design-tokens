@@ -1,6 +1,7 @@
+import { transformLineHeight } from '@tokens-studio/sd-transforms';
 import setWith from 'lodash.setwith';
 import { parseToRgb } from 'polished';
-import { Dictionary, TransformedToken } from 'style-dictionary';
+import { Dictionary, Named, Transform, TransformGroup, TransformedToken } from 'style-dictionary';
 
 export const filters = {
   isColor: (token: TransformedToken) => token.type === 'color',
@@ -138,46 +139,46 @@ export const tailwindThemeFormatter = {
 
 export const cssVariableFormatter = (mode: 'pc' | 'mobile') => ({
   createCSSVariableColor: ({ dictionary }: { dictionary: Dictionary }) => `.theme-${mode} {\n  ${dictionary.allTokens
-      .map(token => `--${token.path.join('-')}: ${token.value};`)
-      .join('\n  ')}\n}`,
+    .map(token => `--${token.path.join('-')}: ${token.value};`)
+    .join('\n  ')}\n}`,
 
   createCSSVariableBorder: ({ dictionary }: { dictionary: Dictionary }) => `.theme-${mode} {\n  ${dictionary.allTokens
-      .map((token: TransformedToken) => {
-        const { style, width, color } = token.value;
-        return `--${token.path.join('-')}: ${style} ${width}px ${color};`;
-      })
-      .join('\n  ')}\n}`,
+    .map((token: TransformedToken) => {
+      const { style, width, color } = token.value;
+      return `--${token.path.join('-')}: ${style} ${width}px ${color};`;
+    })
+    .join('\n  ')}\n}`,
   createCSSVariableBorderColor: ({ dictionary }: { dictionary: Dictionary }) => `.theme-${mode} {\n  ${dictionary.allTokens
-      .map((token: TransformedToken) => `--${token.path.join('-')}-color: ${token.value.color};`)
-      .join('\n  ')}\n}`,
+    .map((token: TransformedToken) => `--${token.path.join('-')}-color: ${token.value.color};`)
+    .join('\n  ')}\n}`,
   createCSSVariableBoxShadow: ({ dictionary }: { dictionary: Dictionary }) => `.theme-${mode} {\n  ${dictionary.allTokens
-      .map((token: TransformedToken) => {
-        const { x, y, blur, spread, color } = token.value;
-        const [hex, alpha] = color.split(', ');
-        const { red, green, blue } = parseToRgb(hex);
-        return `--${token.path.join(
-          '-',
-        )}: ${x}px ${y}px ${blur}px ${spread}px rgb(${red} ${green} ${blue} / ${alpha});`;
-      })
-      .join('\n  ')}\n}`,
+    .map((token: TransformedToken) => {
+      const { x, y, blur, spread, color } = token.value;
+      const [hex, alpha] = color.split(', ');
+      const { red, green, blue } = parseToRgb(hex);
+      return `--${token.path.join(
+        '-',
+      )}: ${x}px ${y}px ${blur}px ${spread}px rgb(${red} ${green} ${blue} / ${alpha});`;
+    })
+    .join('\n  ')}\n}`,
   createCSSVariableFont: ({ dictionary }: { dictionary: Dictionary }) => `.theme-${mode} {\n  ${dictionary.allTokens
-      .map((token: TransformedToken) => {
-        const { fontFamily, fontWeight, lineHeight, fontSize } = token.value;
-        return `--${token.path.join('-')}: ${fontWeight} ${fontSize}/${lineHeight} ${fontFamily};`;
-      })
-      .join('\n  ')}\n}`,
+    .map((token: TransformedToken) => {
+      const { fontFamily, fontWeight, lineHeight, fontSize } = token.value;
+      return `--${token.path.join('-')}: ${fontWeight} ${fontSize}/${lineHeight} ${fontFamily};`;
+    })
+    .join('\n  ')}\n}`,
   createCSSVariableFontSize: ({ dictionary }: { dictionary: Dictionary }) => `.theme-${mode} {\n  ${dictionary.allTokens
-      .map((token: TransformedToken) => `--${token.path.join('-')}: ${token.value};`)
-      .join('\n  ')}\n}`,
+    .map((token: TransformedToken) => `--${token.path.join('-')}: ${token.value};`)
+    .join('\n  ')}\n}`,
   createCSSVariableFontWeight: ({ dictionary }: { dictionary: Dictionary }) => `.theme-${mode} {\n  ${dictionary.allTokens
-      .map((token: TransformedToken) => `--${token.path.join('-')}: ${token.value};`)
-      .join('\n  ')}\n}`,
+    .map((token: TransformedToken) => `--${token.path.join('-')}: ${token.value};`)
+    .join('\n  ')}\n}`,
   createCSSVariableLineHeight: ({ dictionary }: { dictionary: Dictionary }) => `.theme-${mode} {\n  ${dictionary.allTokens
-      .map((token: TransformedToken) => `--${token.path.join('-')}: ${token.value};`)
-      .join('\n  ')}\n}`,
+    .map((token: TransformedToken) => `--${token.path.join('-')}: ${token.value};`)
+    .join('\n  ')}\n}`,
   createCSSVariableFontFamily: ({ dictionary }: { dictionary: Dictionary }) => `.theme-${mode} {\n  ${dictionary.allTokens
-      .map((token: TransformedToken) => `--${token.path.join('-')}: ${token.value};`)
-      .join('\n  ')}\n}`,
+    .map((token: TransformedToken) => `--${token.path.join('-')}: ${token.value};`)
+    .join('\n  ')}\n}`,
 });
 
 export const reactNativeThemeFormatter = {
@@ -206,3 +207,31 @@ export const reactNativeThemeFormatter = {
     return `${header}\n\nexport default ${JSON.stringify(theme, undefined, 2)} as const`;
   },
 };
+
+export const lineHeightTransform: Named<Transform> = {
+  name: 'publy/size/lineheight',
+  type: 'value',
+  transitive: true,
+  matcher: ({ type }) => ['lineHeights', 'typography'].includes(type),
+  transformer: (token) => {
+    if (token.type === 'lineHeights') {
+      return transformLineHeight(token.value)
+    } if (token.type === 'typography') {
+      return {
+        ...token.value,
+        lineHeight: transformLineHeight(token.value.lineHeight)
+      };
+    }
+    return token;
+  },
+}
+
+export const reactNativeTransformGroup: Named<TransformGroup> = {
+  name: 'publy/react-native',
+  transforms: [
+    lineHeightTransform.name,
+    'name/cti/camel',
+    'size/object',
+    'color/css'
+  ]
+}

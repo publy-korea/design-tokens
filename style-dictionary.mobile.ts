@@ -1,12 +1,18 @@
+import StyleDictionary from 'style-dictionary';
 import { Config } from 'style-dictionary/types/Config';
 import {
   cssVariableFormatter,
   filters,
+  lineHeightTransform,
   reactNativeThemeFormatter,
+  reactNativeTransformGroup,
   tailwindThemeFormatter,
 } from './src/utils/style-dictionary-helpers';
 
 const MODE = 'mobile';
+
+StyleDictionary.registerTransform(lineHeightTransform);
+StyleDictionary.registerTransformGroup(reactNativeTransformGroup)
 
 const config: Config = {
   source: [`transformed/${MODE}.json`],
@@ -17,7 +23,7 @@ const config: Config = {
   },
   platforms: {
     css: {
-      transforms: ['attribute/cti', 'name/cti/kebab'],
+      transforms: [lineHeightTransform.name, 'attribute/cti', 'name/cti/kebab'],
       buildPath: './src/css/',
       files: [
         {
@@ -68,7 +74,7 @@ const config: Config = {
       ],
     },
     rn: {
-      transformGroup: 'react-native',
+      transformGroup: reactNativeTransformGroup.name,
       buildPath: './src/react-native/',
       files: [
         {
@@ -86,5 +92,6 @@ const config: Config = {
   },
 };
 
-// cjs export for style-dictionary cli
-export = config;
+const sd = StyleDictionary.extend(config);
+sd.cleanAllPlatforms();
+sd.buildAllPlatforms();
