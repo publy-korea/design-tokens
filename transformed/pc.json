@@ -768,17 +768,17 @@
   },
   "line-height": {
     "tight": {
-      "value": 1.25,
+      "value": "125%",
       "type": "lineHeights",
       "description": "line-height: 1.25"
     },
     "normal": {
-      "value": 1.5,
+      "value": "150%",
       "type": "lineHeights",
       "description": "Line-Height: 1.5"
     },
     "loose": {
-      "value": 2,
+      "value": "200%",
       "type": "lineHeights",
       "description": "Line-Height: 2"
     }
@@ -797,7 +797,7 @@
           "value": {
             "fontFamily": "Pretendard",
             "fontWeight": 700,
-            "lineHeight": 2,
+            "lineHeight": "200%",
             "fontSize": "30px"
           },
           "type": "typography",
@@ -809,7 +809,7 @@
           "value": {
             "fontFamily": "Pretendard",
             "fontWeight": 700,
-            "lineHeight": 2,
+            "lineHeight": "200%",
             "fontSize": "24px"
           },
           "type": "typography"
@@ -820,7 +820,7 @@
           "value": {
             "fontFamily": "Pretendard",
             "fontWeight": 700,
-            "lineHeight": 1.5,
+            "lineHeight": "150%",
             "fontSize": "20px"
           },
           "type": "typography"
@@ -834,7 +834,7 @@
             "fontFamily": "Pretendard",
             "fontWeight": 700,
             "fontSize": "30px",
-            "lineHeight": 1.5
+            "lineHeight": "150%"
           },
           "type": "typography",
           "description": "-하나의 스크린에 여러번 존재할 수 있음.\n-스크린 안에서 헤드라인을 제외한 타이포그래피 중 가장 큰 단위의 위계를 지닌다."
@@ -846,7 +846,7 @@
             "fontFamily": "Pretendard",
             "fontWeight": 700,
             "fontSize": "24px",
-            "lineHeight": 1.5
+            "lineHeight": "150%"
           },
           "type": "typography",
           "description": "- 하나의 스크린에 여러번 존재할 수 있음.\n- 스크린 안에서 헤드라인을 제외한 타이포그래피 중 가장 큰 단위의 위계를 지닌다."
@@ -858,7 +858,7 @@
             "fontFamily": "Pretendard",
             "fontWeight": 700,
             "fontSize": "20px",
-            "lineHeight": 1.5
+            "lineHeight": "150%"
           },
           "type": "typography",
           "description": "- 하나의 스크린에 여러번 존재할 수 있음.\n- 스크린 안에서 헤드라인을 제외한 타이포그래피 중 가장 큰 단위의 위계를 지닌다."
@@ -870,7 +870,7 @@
             "fontFamily": "Pretendard",
             "fontWeight": 700,
             "fontSize": "18px",
-            "lineHeight": 1.5
+            "lineHeight": "150%"
           },
           "type": "typography",
           "description": "- 하나의 스크린에 여러번 존재할 수 있음.\n- 스크린 안에서 헤드라인을 제외한 타이포그래피 중 가장 큰 단위의 위계를 지닌다."

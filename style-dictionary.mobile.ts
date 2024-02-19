@@ -1,21 +1,29 @@
+import StyleDictionary from 'style-dictionary';
 import { Config } from 'style-dictionary/types/Config';
 import {
   cssVariableFormatter,
   filters,
+  lineHeightTransform,
+  reactNativeThemeFormatter,
+  reactNativeTransformGroup,
   tailwindThemeFormatter,
 } from './src/utils/style-dictionary-helpers';
 
-const MODE = 'pc';
+const MODE = 'mobile';
+
+StyleDictionary.registerTransform(lineHeightTransform);
+StyleDictionary.registerTransformGroup(reactNativeTransformGroup)
 
 const config: Config = {
   source: [`transformed/${MODE}.json`],
   format: {
     ...tailwindThemeFormatter,
     ...cssVariableFormatter(MODE),
+    ...reactNativeThemeFormatter,
   },
   platforms: {
     css: {
-      transforms: ['attribute/cti', 'name/cti/kebab'],
+      transforms: [lineHeightTransform.name, 'attribute/cti', 'name/cti/kebab'],
       buildPath: './src/css/',
       files: [
         {
@@ -65,59 +73,25 @@ const config: Config = {
         },
       ],
     },
-    tailwind: {
-      transforms: ['attribute/cti', 'name/cti/kebab'],
-      buildPath: './src/tailwind/',
+    rn: {
+      transformGroup: reactNativeTransformGroup.name,
+      buildPath: './src/react-native/',
       files: [
         {
           filter: filters.isColor,
-          destination: 'colors.json',
-          format: 'createTailwindThemeColor',
+          destination: 'colors.ts',
+          format: 'createReactNativeThemeColor',
         },
         {
           filter: filters.isBorder,
-          destination: 'borders.json',
-          format: 'createTailwindThemeBorder',
-        },
-        {
-          filter: filters.isBorder,
-          destination: 'border-colors.json',
-          format: 'createTailwindThemeBorderColor',
-        },
-        {
-          filter: filters.isBoxShadow,
-          destination: 'box-shadows.json',
-          format: 'createTailwindThemeBoxShadow',
-        },
-        {
-          filter: filters.isFont,
-          destination: 'fonts.json',
-          format: 'createTailwindThemeFont',
-        },
-        {
-          filter: filters.isFontSize,
-          destination: `font-sizes.json`,
-          format: 'createTailwindThemeFontSize',
-        },
-        {
-          filter: filters.isFontWeight,
-          destination: `font-weights.json`,
-          format: 'createTailwindThemeFontWeight',
-        },
-        {
-          filter: filters.isLineHeight,
-          destination: `line-heights.json`,
-          format: 'createTailwindThemeLineHeight',
-        },
-        {
-          filter: filters.isFontFamily,
-          destination: `font-families.json`,
-          format: 'createTailwindThemeFontFamily',
+          destination: 'border-colors.ts',
+          format: 'createReactNativeThemeBorderColor',
         },
       ],
     },
   },
 };
 
-// cjs export for style-dictionary cli
-export = config;
+const sd = StyleDictionary.extend(config);
+sd.cleanAllPlatforms();
+sd.buildAllPlatforms();
