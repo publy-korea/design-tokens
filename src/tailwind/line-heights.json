@@ -1,5 +1,5 @@
 {
-  "line-height-tight": "var(--line-height-tight, 125%)",
-  "line-height-normal": "var(--line-height-normal, 150%)",
-  "line-height-loose": "var(--line-height-loose, 200%)"
+  "line-height-tight": "var(--line-height-tight, 1.25)",
+  "line-height-normal": "var(--line-height-normal, 1.5)",
+  "line-height-loose": "var(--line-height-loose, 2)"
 }
