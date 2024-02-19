@@ -8,8 +8,8 @@
     "npm": "9.5.x"
   },
   "scripts": {
-    "transform:mobile": "token-transformer tokens.json transformed/mobile.json Mobile",
-    "transform:pc": "token-transformer tokens.json transformed/pc.json PC",
+    "transform:mobile": "token-transformer tokens.json transformed/mobile.json Common,Mobile",
+    "transform:pc": "token-transformer tokens.json transformed/pc.json Common,PC",
     "transform": "npm run transform:mobile && npm run transform:pc",
     "style-dictionary:mobile": "ts-node style-dictionary.mobile.ts",
     "style-dictionary:pc": "ts-node style-dictionary.pc.ts",

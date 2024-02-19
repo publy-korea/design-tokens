@@ -1,6 +1,7 @@
 {
   "color": {
     "text": {
+      "subtle": "var(--color-text-subtle, #334155)",
       "success": "var(--color-text-success, #16a34a)",
       "error": "var(--color-text-error, #b91c1c)",
       "warning": "var(--color-text-warning, #a16207)",
@@ -16,6 +17,18 @@
         "disabled": "var(--color-text-button-disabled, #94a3b8)",
         "destructive": "var(--color-text-button-destructive, #ef4444)"
       }
+    },
+    "slate": {
+      "50": "var(--color-slate-50, #f8fafc)",
+      "100": "var(--color-slate-100, #f1f5f9)",
+      "200": "var(--color-slate-200, #e2e8f0)",
+      "300": "var(--color-slate-300, #cbd5e1)",
+      "400": "var(--color-slate-400, #94a3b8)",
+      "500": "var(--color-slate-500, #64748b)",
+      "600": "var(--color-slate-600, #475569)",
+      "700": "var(--color-slate-700, #334155)",
+      "800": "var(--color-slate-800, #1e293b)",
+      "900": "var(--color-slate-900, #0f172a)"
     },
     "background": {
       "button": {
@@ -142,18 +155,6 @@
       "700": "var(--color-magenta-700, #a21caf)",
       "800": "var(--color-magenta-800, #86198f)",
       "900": "var(--color-magenta-900, #701A75)"
-    },
-    "slate": {
-      "50": "var(--color-slate-50, #f8fafc)",
-      "100": "var(--color-slate-100, #f1f5f9)",
-      "200": "var(--color-slate-200, #e2e8f0)",
-      "300": "var(--color-slate-300, #cbd5e1)",
-      "400": "var(--color-slate-400, #94a3b8)",
-      "500": "var(--color-slate-500, #64748b)",
-      "600": "var(--color-slate-600, #475569)",
-      "700": "var(--color-slate-700, #334155)",
-      "800": "var(--color-slate-800, #1e293b)",
-      "900": "var(--color-slate-900, #0f172a)"
     },
     "green": {
       "50": "var(--color-green-50, #f0fdf4)",

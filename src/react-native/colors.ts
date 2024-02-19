@@ -1,9 +1,10 @@
 /**
  * 직접 수정하지 마세요
- * Mon Feb 19 2024 05:18:05 GMT+0000 (Coordinated Universal Time)에 생성됨
+ * Mon Feb 19 2024 14:43:20 GMT+0900 (대한민국 표준시)에 생성됨
  */
 
 export default {
+  "colorTextSubtle": "#334155",
   "colorTextSuccess": "#16a34a",
   "colorTextError": "#b91c1c",
   "colorTextWarning": "#a16207",
@@ -17,6 +18,16 @@ export default {
   "colorTextButtonCompleted": "#64748b",
   "colorTextButtonDisabled": "#94a3b8",
   "colorTextButtonDestructive": "#ef4444",
+  "colorSlate50": "#f8fafc",
+  "colorSlate100": "#f1f5f9",
+  "colorSlate200": "#e2e8f0",
+  "colorSlate300": "#cbd5e1",
+  "colorSlate400": "#94a3b8",
+  "colorSlate500": "#64748b",
+  "colorSlate600": "#475569",
+  "colorSlate700": "#334155",
+  "colorSlate800": "#1e293b",
+  "colorSlate900": "#0f172a",
   "colorBackgroundButtonDestructiveEnabled": "#ef4444",
   "colorBackgroundButtonDestructiveHover": "#dc2626",
   "colorBackgroundButtonDisabled": "#f1f5f9",
@@ -113,16 +124,6 @@ export default {
   "colorMagenta700": "#a21caf",
   "colorMagenta800": "#86198f",
   "colorMagenta900": "#701A75",
-  "colorSlate50": "#f8fafc",
-  "colorSlate100": "#f1f5f9",
-  "colorSlate200": "#e2e8f0",
-  "colorSlate300": "#cbd5e1",
-  "colorSlate400": "#94a3b8",
-  "colorSlate500": "#64748b",
-  "colorSlate600": "#475569",
-  "colorSlate700": "#334155",
-  "colorSlate800": "#1e293b",
-  "colorSlate900": "#0f172a",
   "colorGreen50": "#f0fdf4",
   "colorGreen100": "#dcfce7",
   "colorGreen200": "#bbf7d0",
