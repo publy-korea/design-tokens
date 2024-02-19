@@ -1,8 +1,8 @@
 .theme-mobile {
-  --font-headline-large-bold: 700 24px/1.5 Pretendard;
-  --font-headline-medium-bold: 700 20px/1.5 Pretendard;
-  --font-headline-small-bold: 700 18px/1.5 Pretendard;
-  --font-title-large-bold: 700 24px/1.5 Pretendard;
-  --font-title-medium-bold: 700 20px/1.5 Pretendard;
-  --font-title-small-bold: 700 18px/1.5 Pretendard;
+  --font-headline-large-bold: 700 24px/150% Pretendard;
+  --font-headline-medium-bold: 700 20px/150% Pretendard;
+  --font-headline-small-bold: 700 18px/150% Pretendard;
+  --font-title-large-bold: 700 24px/150% Pretendard;
+  --font-title-medium-bold: 700 20px/150% Pretendard;
+  --font-title-small-bold: 700 18px/150% Pretendard;
 }
