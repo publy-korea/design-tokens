@@ -181,6 +181,8 @@ export const cssVariableFormatter = (mode: 'pc' | 'mobile') => ({
     .join('\n  ')}\n}`,
 });
 
+const REACT_NATIVE_OUTPUT_HEADER = `/**\n * 직접 수정하지 마세요\n * npm run style-dictionary:mobile 에 의해 생성됩니다\n */`;
+
 export const reactNativeThemeFormatter = {
   createReactNativeThemeColor: ({ dictionary }: { dictionary: Dictionary }) => {
     const theme: Record<string, string> = {};
@@ -190,9 +192,7 @@ export const reactNativeThemeFormatter = {
       theme[keys.join('')] = token.value;
     });
 
-    const header = `/**\n * 직접 수정하지 마세요\n * ${new Date()}에 생성됨\n */`;
-
-    return `${header}\n\nexport default ${JSON.stringify(theme, undefined, 2)} as const`;
+    return `${REACT_NATIVE_OUTPUT_HEADER}\n\nexport default ${JSON.stringify(theme, undefined, 2)} as const`;
   },
   createReactNativeThemeBorderColor: ({ dictionary }: { dictionary: Dictionary }) => {
     const theme: Record<string, string> = {};
@@ -202,9 +202,7 @@ export const reactNativeThemeFormatter = {
       theme[keys.join('')] = token.value.color;
     });
 
-    const header = `/**\n * 직접 수정하지 마세요\n * ${new Date()}에 생성됨\n */`;
-
-    return `${header}\n\nexport default ${JSON.stringify(theme, undefined, 2)} as const`;
+    return `${REACT_NATIVE_OUTPUT_HEADER}\n\nexport default ${JSON.stringify(theme, undefined, 2)} as const`;
   },
 };
 

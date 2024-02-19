@@ -1,6 +1,6 @@
 /**
  * 직접 수정하지 마세요
- * Mon Feb 19 2024 14:43:20 GMT+0900 (대한민국 표준시)에 생성됨
+ * npm run style-dictionary:mobile 에 의해 생성됩니다
  */
 
 export default {
