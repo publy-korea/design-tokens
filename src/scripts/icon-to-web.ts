@@ -14,6 +14,12 @@ function toPascalCase(str:string) {
     .replace(/([-_][a-z])/g, (group) => group.toUpperCase().replace('-', '').replace('_', ''))
     .replace(/^[a-z]/, (firstLetter) => firstLetter.toUpperCase());
 }
+
+function removeFillAttribute(svgString: string): string {
+  const fillRegex = /\sfill="[^"]*"/g;
+  return svgString.replace(fillRegex, '');
+}
+
 const iconsJsonPath = '.icona/icons.json';
 const outputDirectory = path.resolve('icons/web');
 
@@ -41,7 +47,7 @@ Object.values(iconsData).forEach(icon => {
   const svgRegex = /<svg[^>]*>([\s\S]*?)<\/svg>/;
   const svgMatch = svgContent.match(svgRegex) 
   if (svgMatch) {
-    const svgPath = svgMatch[1];
+    const svgPath = removeFillAttribute(svgMatch[1]);
     transformedIcons[filename] = { ...transformedIcons[filename], [pathType]: svgPath, }
   }
 })
