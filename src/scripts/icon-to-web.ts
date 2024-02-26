@@ -32,7 +32,9 @@ const transformedIcons: {
 } = {}
 
 Object.values(iconsData).forEach(icon => {
-  const [iconName, iconType] = icon.name.split('_');
+  const iconNames = icon.name.split('_');
+  const iconType = iconNames.pop();
+  const iconName = iconNames.join('-');
   const pathType = iconType === 'yes' ? 'solidPath' : 'outlinePath';
   const filename = path.basename(toPascalCase(iconName.split("/")[1]), '.tsx');
   const svgContent = icon.svg;
