@@ -2,7 +2,7 @@ image: node:18.16.0-bookworm
 
 pipelines:
   branches:
-    CFVM-153-icon-pipeline:
+    main:
       - step:
           name: Check Icon Changes and Generate Icon Components
           condition:
@@ -27,11 +27,10 @@ pipelines:
               - rm -rf target/src/icons/*
               - cp -R icons/rn/* target/src/icons
               - cd target
-              - git checkout -b CFVM-153-icon-pipeline
               - git config user.email $RN_BOT_EMAIL
               - git add .
               - git commit -a -m "[Updated Icons]"
-              - git push --set-upstream https://x-token-auth:$RN_ACCESS_TOKEN@bitbucket.org/publyproduct/rn-design-system.git CFVM-153-icon-pipeline
+              - git push https://x-token-auth:$RN_ACCESS_TOKEN@bitbucket.org/publyproduct/rn-design-system.git
               - cd .. 
         - step:
             name: Push to Web Design System
@@ -45,11 +44,10 @@ pipelines:
               - rm -rf target/src/icons/*
               - cp -R icons/web/* target/src/icons
               - cd target
-              - git checkout -b CFVM-153-icon-pipeline
               - git config user.email $WEB_BOT_EMAIL
               - git add .
               - git commit -a -m "[Updated Icons]"
-              - git push --set-upstream https://x-token-auth:$WEB_ACCESS_TOKEN@bitbucket.org/publyproduct/web-design-system.git CFVM-153-icon-pipeline
+              - git push https://x-token-auth:$WEB_ACCESS_TOKEN@bitbucket.org/publyproduct/web-design-system.git
               - cd .. 
         
               
