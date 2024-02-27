@@ -6,11 +6,7 @@
 import fs from 'fs';
 import path from 'path';
 
-const [
-  _nodePath,
-  _scriptPath,
-  iconsDirectory = './icons',
- ] = process.argv
+const [_nodePath, _scriptPath, iconsDirectory = './icons'] = process.argv;
 
 const indexFilePath = path.join(iconsDirectory, 'index.tsx');
 if (fs.existsSync(indexFilePath)) {
@@ -26,13 +22,9 @@ fs.readdir(iconsDirectory, (err, files) => {
   const filenames = files.map(file => path.basename(file, '.tsx'));
   const outputFilePath = path.join(iconsDirectory, 'index.tsx');
 
-  const outputFileContent =
-    `${filenames
-      .map(filename => `import ${filename} from './${filename}';`)
-      .join('\n') 
-    }\n\nexport {\n${ 
-    filenames.map(filename => `  ${filename},`).join('\n') 
-    }\n};\n`;
+  const outputFileContent = `${filenames
+    .map(filename => `import ${filename} from './${filename}';`)
+    .join('\n')}\n\nexport {\n${filenames.map(filename => `  ${filename},`).join('\n')}\n};\n`;
 
   fs.writeFileSync(outputFilePath, outputFileContent);
 

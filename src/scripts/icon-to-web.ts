@@ -6,13 +6,13 @@ type IconType = {
     svg: string;
     name: string;
     png: Record<string, string>;
-  },
-}
+  };
+};
 
-function toPascalCase(str:string) {
+function toPascalCase(str: string) {
   return str
-    .replace(/([-_][a-z])/g, (group) => group.toUpperCase().replace('-', '').replace('_', ''))
-    .replace(/^[a-z]/, (firstLetter) => firstLetter.toUpperCase());
+    .replace(/([-_][a-z])/g, group => group.toUpperCase().replace('-', '').replace('_', ''))
+    .replace(/^[a-z]/, firstLetter => firstLetter.toUpperCase());
 }
 
 function removeFillAttribute(svgString: string): string {
@@ -24,7 +24,7 @@ const iconsJsonPath = '.icona/icons.json';
 const outputDirectory = path.resolve('icons/web');
 
 if (!fs.existsSync(outputDirectory)) {
-  fs.mkdirSync(outputDirectory, {recursive: true});
+  fs.mkdirSync(outputDirectory, { recursive: true });
 }
 
 const iconsJsonContent = fs.readFileSync(iconsJsonPath, 'utf8');
@@ -34,23 +34,23 @@ const transformedIcons: {
   [name: string]: {
     solidPath: string;
     outlinePath: string;
-  }
-} = {}
+  };
+} = {};
 
 Object.values(iconsData).forEach(icon => {
   const iconNames = icon.name.split('_');
   const iconType = iconNames.pop();
   const iconName = iconNames.join('-');
   const pathType = iconType === 'yes' ? 'solidPath' : 'outlinePath';
-  const filename = path.basename(toPascalCase(iconName.split("/")[1]), '.tsx');
+  const filename = path.basename(toPascalCase(iconName.split('/')[1]), '.tsx');
   const svgContent = icon.svg;
   const svgRegex = /<svg[^>]*>([\s\S]*?)<\/svg>/;
-  const svgMatch = svgContent.match(svgRegex) 
+  const svgMatch = svgContent.match(svgRegex);
   if (svgMatch) {
     const svgPath = removeFillAttribute(svgMatch[1]);
-    transformedIcons[filename] = { ...transformedIcons[filename], [pathType]: svgPath, }
+    transformedIcons[filename] = { ...transformedIcons[filename], [pathType]: svgPath };
   }
-})
+});
 
 Object.entries(transformedIcons).forEach(([name, paths]) => {
   const outputFilePath = path.join(outputDirectory, `${name}Icon.tsx`);
@@ -90,10 +90,8 @@ function ${name}Icon(props: Props) {
 }
 
 export default ${name}Icon;
-`
+`;
   fs.writeFileSync(outputFilePath, outputFileContent);
 });
 
 console.log('Icon files have been generated in', outputDirectory);
-  
-

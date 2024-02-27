@@ -2,7 +2,7 @@ image: node:18.16.0-bookworm
 
 pipelines:
   branches:
-    CFVM-153-icon-pipeline:
+    main:
       - step:
           name: Check Icon Changes and Generate Icon Components
           condition:
@@ -27,7 +27,6 @@ pipelines:
               - rm -rf target/src/icons/*
               - cp -R icons/rn/* target/src/icons
               - cd target
-              - git checkout -b CFVM-153-icon-pipeline
               - git config user.email $BOT_EMAIL
               - git add .
               - git commit -a -m "[Updated Icons]"
@@ -45,7 +44,6 @@ pipelines:
               - rm -rf target/src/icons/*
               - cp -R icons/web/* target/src/icons
               - cd target
-              - git checkout -b CFVM-153-icon-pipeline
               - git config user.email $BOT_EMAIL
               - git add .
               - git commit -a -m "[Updated Icons]"
