@@ -11,7 +11,7 @@ type IconType = {
 
 function toPascalCase(str: string) {
   return str
-    .replace(/([-_][a-z])/g, group => group.toUpperCase().replace('-', '').replace('_', ''))
+    .replace(/([-_][a-z0-9])/g, group => group.toUpperCase().replace('-', '').replace('_', ''))
     .replace(/^[a-z]/, firstLetter => firstLetter.toUpperCase());
 }
 
