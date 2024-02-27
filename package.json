@@ -12,8 +12,8 @@
     "transform:mobile": "token-transformer tokens.json transformed/mobile.json Mobile",
     "transform:pc": "token-transformer tokens.json transformed/pc.json PC",
     "transform": "npm run transform:mobile && npm run transform:pc",
-    "style-dictionary:mobile": "tsc && style-dictionary build --config ./dist/style-dictionary.config.mobile.js",
-    "style-dictionary:pc": "tsc && style-dictionary build --config ./dist/style-dictionary.config.pc.js",
+    "style-dictionary:mobile": "ts-node style-dictionary.mobile.ts",
+    "style-dictionary:pc": "ts-node style-dictionary.pc.ts",
     "build:pc": "npm run transform:pc && npm run style-dictionary:pc",
     "build:mobile": "npm run transform:mobile && npm run style-dictionary:mobile",
     "build": "npm run build:pc && npm run build:mobile",
@@ -33,6 +33,7 @@
   },
   "homepage": "https://github.com/publy-korea/design-tokens#readme",
   "devDependencies": {
+    "@tokens-studio/sd-transforms": "0.12.2",
     "@tsconfig/recommended": "^1.0.2",
     "@types/lodash.mapvalues": "^4.6.7",
     "@types/lodash.set": "^4.3.7",
@@ -55,6 +56,7 @@
     "style-dictionary": "^3.7.2",
     "tailwindcss": "^3.2.7",
     "token-transformer": "0.0.30",
+    "ts-node": "^10.9.2",
     "typescript": "^5.3.3"
   }
 }

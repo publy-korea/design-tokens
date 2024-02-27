@@ -1,6 +1,7 @@
+import { transformLineHeight } from '@tokens-studio/sd-transforms';
 import setWith from 'lodash.setwith';
 import { parseToRgb } from 'polished';
-import { Dictionary, TransformedToken } from 'style-dictionary';
+import { Dictionary, Named, Transform, TransformGroup, TransformedToken } from 'style-dictionary';
 
 export const filters = {
   isColor: (token: TransformedToken) => token.type === 'color',
@@ -215,3 +216,31 @@ export const reactNativeThemeFormatter = {
     return `${header}\n\nexport default ${JSON.stringify(theme, undefined, 2)} as const`;
   },
 };
+
+export const lineHeightTransform: Named<Transform> = {
+  name: 'publy/size/lineheight',
+  type: 'value',
+  transitive: true,
+  matcher: ({ type }) => ['lineHeights', 'typography'].includes(type),
+  transformer: (token) => {
+    if (token.type === 'lineHeights') {
+      return transformLineHeight(token.value)
+    } if (token.type === 'typography') {
+      return {
+        ...token.value,
+        lineHeight: transformLineHeight(token.value.lineHeight)
+      };
+    }
+    return token;
+  },
+}
+
+export const reactNativeTransformGroup: Named<TransformGroup> = {
+  name: 'publy/react-native',
+  transforms: [
+    lineHeightTransform.name,
+    'name/cti/camel',
+    'size/object',
+    'color/css'
+  ]
+}
