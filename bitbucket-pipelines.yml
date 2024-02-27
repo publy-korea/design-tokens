@@ -31,7 +31,7 @@ pipelines:
               - git config user.email $BOT_EMAIL
               - git add .
               - git commit -a -m "[Updated Icons]"
-              - git push 
+              - git push --set-upstream origin CFVM-153-icon-pipeline
               - cd .. 
         - step:
             name: Push to Web Design System
@@ -49,7 +49,7 @@ pipelines:
               - git config user.email $BOT_EMAIL
               - git add .
               - git commit -a -m "[Updated Icons]"
-              - git push 
+              - git push --set-upstream origin CFVM-153-icon-pipeline
               - cd .. 
         
               
