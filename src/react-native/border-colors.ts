@@ -1,6 +1,6 @@
 /**
  * 직접 수정하지 마세요
- * Mon Feb 19 2024 05:11:24 GMT+0000 (Coordinated Universal Time)에 생성됨
+ * Tue Feb 27 2024 06:32:09 GMT+0000 (Coordinated Universal Time)에 생성됨
  */
 
 export default {

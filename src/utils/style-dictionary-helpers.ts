@@ -138,47 +138,56 @@ export const tailwindThemeFormatter = {
 };
 
 export const cssVariableFormatter = (mode: 'pc' | 'mobile') => ({
-  createCSSVariableColor: ({ dictionary }: { dictionary: Dictionary }) => `.theme-${mode} {\n  ${dictionary.allTokens
-    .map(token => `--${token.path.join('-')}: ${token.value};`)
-    .join('\n  ')}\n}`,
+  createCSSVariableColor: ({ dictionary }: { dictionary: Dictionary }) =>
+    `.theme-${mode} {\n  ${dictionary.allTokens
+      .map(token => `--${token.path.join('-')}: ${token.value};`)
+      .join('\n  ')}\n}`,
 
-  createCSSVariableBorder: ({ dictionary }: { dictionary: Dictionary }) => `.theme-${mode} {\n  ${dictionary.allTokens
-    .map((token: TransformedToken) => {
-      const { style, width, color } = token.value;
-      return `--${token.path.join('-')}: ${style} ${width}px ${color};`;
-    })
-    .join('\n  ')}\n}`,
-  createCSSVariableBorderColor: ({ dictionary }: { dictionary: Dictionary }) => `.theme-${mode} {\n  ${dictionary.allTokens
-    .map((token: TransformedToken) => `--${token.path.join('-')}-color: ${token.value.color};`)
-    .join('\n  ')}\n}`,
-  createCSSVariableBoxShadow: ({ dictionary }: { dictionary: Dictionary }) => `.theme-${mode} {\n  ${dictionary.allTokens
-    .map((token: TransformedToken) => {
-      const { x, y, blur, spread, color } = token.value;
-      const [hex, alpha] = color.split(', ');
-      const { red, green, blue } = parseToRgb(hex);
-      return `--${token.path.join(
-        '-',
-      )}: ${x}px ${y}px ${blur}px ${spread}px rgb(${red} ${green} ${blue} / ${alpha});`;
-    })
-    .join('\n  ')}\n}`,
-  createCSSVariableFont: ({ dictionary }: { dictionary: Dictionary }) => `.theme-${mode} {\n  ${dictionary.allTokens
-    .map((token: TransformedToken) => {
-      const { fontFamily, fontWeight, lineHeight, fontSize } = token.value;
-      return `--${token.path.join('-')}: ${fontWeight} ${fontSize}/${lineHeight} ${fontFamily};`;
-    })
-    .join('\n  ')}\n}`,
-  createCSSVariableFontSize: ({ dictionary }: { dictionary: Dictionary }) => `.theme-${mode} {\n  ${dictionary.allTokens
-    .map((token: TransformedToken) => `--${token.path.join('-')}: ${token.value};`)
-    .join('\n  ')}\n}`,
-  createCSSVariableFontWeight: ({ dictionary }: { dictionary: Dictionary }) => `.theme-${mode} {\n  ${dictionary.allTokens
-    .map((token: TransformedToken) => `--${token.path.join('-')}: ${token.value};`)
-    .join('\n  ')}\n}`,
-  createCSSVariableLineHeight: ({ dictionary }: { dictionary: Dictionary }) => `.theme-${mode} {\n  ${dictionary.allTokens
-    .map((token: TransformedToken) => `--${token.path.join('-')}: ${token.value};`)
-    .join('\n  ')}\n}`,
-  createCSSVariableFontFamily: ({ dictionary }: { dictionary: Dictionary }) => `.theme-${mode} {\n  ${dictionary.allTokens
-    .map((token: TransformedToken) => `--${token.path.join('-')}: ${token.value};`)
-    .join('\n  ')}\n}`,
+  createCSSVariableBorder: ({ dictionary }: { dictionary: Dictionary }) =>
+    `.theme-${mode} {\n  ${dictionary.allTokens
+      .map((token: TransformedToken) => {
+        const { style, width, color } = token.value;
+        return `--${token.path.join('-')}: ${style} ${width}px ${color};`;
+      })
+      .join('\n  ')}\n}`,
+  createCSSVariableBorderColor: ({ dictionary }: { dictionary: Dictionary }) =>
+    `.theme-${mode} {\n  ${dictionary.allTokens
+      .map((token: TransformedToken) => `--${token.path.join('-')}-color: ${token.value.color};`)
+      .join('\n  ')}\n}`,
+  createCSSVariableBoxShadow: ({ dictionary }: { dictionary: Dictionary }) =>
+    `.theme-${mode} {\n  ${dictionary.allTokens
+      .map((token: TransformedToken) => {
+        const { x, y, blur, spread, color } = token.value;
+        const [hex, alpha] = color.split(', ');
+        const { red, green, blue } = parseToRgb(hex);
+        return `--${token.path.join(
+          '-',
+        )}: ${x}px ${y}px ${blur}px ${spread}px rgb(${red} ${green} ${blue} / ${alpha});`;
+      })
+      .join('\n  ')}\n}`,
+  createCSSVariableFont: ({ dictionary }: { dictionary: Dictionary }) =>
+    `.theme-${mode} {\n  ${dictionary.allTokens
+      .map((token: TransformedToken) => {
+        const { fontFamily, fontWeight, lineHeight, fontSize } = token.value;
+        return `--${token.path.join('-')}: ${fontWeight} ${fontSize}/${lineHeight} ${fontFamily};`;
+      })
+      .join('\n  ')}\n}`,
+  createCSSVariableFontSize: ({ dictionary }: { dictionary: Dictionary }) =>
+    `.theme-${mode} {\n  ${dictionary.allTokens
+      .map((token: TransformedToken) => `--${token.path.join('-')}: ${token.value};`)
+      .join('\n  ')}\n}`,
+  createCSSVariableFontWeight: ({ dictionary }: { dictionary: Dictionary }) =>
+    `.theme-${mode} {\n  ${dictionary.allTokens
+      .map((token: TransformedToken) => `--${token.path.join('-')}: ${token.value};`)
+      .join('\n  ')}\n}`,
+  createCSSVariableLineHeight: ({ dictionary }: { dictionary: Dictionary }) =>
+    `.theme-${mode} {\n  ${dictionary.allTokens
+      .map((token: TransformedToken) => `--${token.path.join('-')}: ${token.value};`)
+      .join('\n  ')}\n}`,
+  createCSSVariableFontFamily: ({ dictionary }: { dictionary: Dictionary }) =>
+    `.theme-${mode} {\n  ${dictionary.allTokens
+      .map((token: TransformedToken) => `--${token.path.join('-')}: ${token.value};`)
+      .join('\n  ')}\n}`,
 });
 
 export const reactNativeThemeFormatter = {

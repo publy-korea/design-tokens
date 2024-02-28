@@ -1,31 +1,31 @@
-{
-  "env": {
-    "node": true,
-    "browser": false,
-    "commonjs": true,
-    "es2021": true
+module.exports ={
+  env: {
+    node: true,
+    browser: false,
+    commonjs: true,
+    es2021: true
   },
-  "extends": [
+  extends: [
     "airbnb",
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:@typescript-eslint/eslint-recommended",
-    "prettier"
+    'plugin:prettier/recommended'
   ],
-  "plugins": [
+  plugins: [
     "@typescript-eslint",
     "prettier"
   ],
-  "parser": "@typescript-eslint/parser",
-  "parserOptions": {
-    "ecmaVersion": "latest",
-    "project": "tsconfig.json"
+    parser: '@typescript-eslint/parser',
+  parserOptions: {
+    ecmaVersion: "latest",
+    project: "tsconfig.json"
   },
-  "ignorePatterns": [
+  ignorePatterns: [
     "node_modules/",
     "tsconfig.json"
   ],
-  "rules": {
+  rules: {
     "@typescript-eslint/ban-types": "off",
     "@typescript-eslint/explicit-function-return-type": "off",
     "@typescript-eslint/explicit-module-boundary-types": "off",
