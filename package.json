@@ -18,7 +18,7 @@
     "build:mobile": "npm run transform:mobile && npm run style-dictionary:mobile",
     "build": "npm run build:pc && npm run build:mobile",
     "test": "tailwindcss -c example/tailwind.config.js -i example/input.css -o example/output.css",
-    "transform-icons:rn": "node dist/src/scripts/icon-to-rn && node dist/src/scripts/create-icon-index icons/rn",
+    "transform-icons:rn": "node dist/src/scripts/icon-to-rn && node dist/src/scripts/create-icon-index icons/rn && cp src/utils/DEPRECATED_Variables.ts icons/rn/DEPRECATED_Variables.ts",
     "transform-icons:web": "node dist/src/scripts/icon-to-web && node dist/src/scripts/create-icon-index icons/web",
     "transform-icons": "tsc && rm -rf icons && npm run transform-icons:rn && npm run transform-icons:web"
   },
