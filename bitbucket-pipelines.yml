@@ -49,6 +49,41 @@ pipelines:
               - git commit -a -m "[Updated Icons]"
               - git push https://x-token-auth:$WEB_ACCESS_TOKEN@bitbucket.org/publyproduct/web-design-system.git
               - cd .. 
-        
+  custom:
+    deploy-icons:
+      - step:
+          name: Check Icon Changes and Generate Icon Components
+          script:
+            - npm install
+            - npm run transform-icons
+          artifacts:
+            - icons/**
+      - parallel:
+        - step:
+            name: Push to RN Design System
+            script:
+              - git clone https://x-token-auth:$RN_ACCESS_TOKEN@bitbucket.org/publyproduct/rn-design-system.git target
+              - mkdir -p target/src/icons
+              - rm -rf target/src/icons/*
+              - cp -R icons/rn/* target/src/icons
+              - cd target
+              - git config user.email $RN_BOT_EMAIL
+              - git add .
+              - git commit -a -m "[Updated Icons]"
+              - git push https://x-token-auth:$RN_ACCESS_TOKEN@bitbucket.org/publyproduct/rn-design-system.git
+              - cd .. 
+        - step:
+            name: Push to Web Design System
+            script:
+              - git clone https://x-token-auth:$WEB_ACCESS_TOKEN@bitbucket.org/publyproduct/web-design-system.git target
+              - mkdir -p target/src/icons
+              - rm -rf target/src/icons/*
+              - cp -R icons/web/* target/src/icons
+              - cd target
+              - git config user.email $WEB_BOT_EMAIL
+              - git add .
+              - git commit -a -m "[Updated Icons]"
+              - git push https://x-token-auth:$WEB_ACCESS_TOKEN@bitbucket.org/publyproduct/web-design-system.git
+              - cd ..
               
 
