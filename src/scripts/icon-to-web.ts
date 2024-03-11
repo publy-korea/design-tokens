@@ -29,11 +29,15 @@ Object.values(iconsData).forEach(icon => {
     if (!transformedIcons[filename]) {
       transformedIcons[filename] = {};
     }
-    transformedIcons[filename][iconType ?? 'outline'] = svgPath;
+    transformedIcons[filename][iconType] = svgPath;
   }
 });
 
 Object.entries(transformedIcons).forEach(([name, paths]) => {
+  if (!('outline' in paths)) {
+    throw new Error(`Icon ${name} does not have an outline type`);
+  }
+
   const outputFilePath = path.join(outputDirectory, `${name}Icon.tsx`);
   const header = `/**\n * 직접 수정 금지 - 스크립트로 자동 생성됨\n */`;
   const stringifiedPaths = Object.entries(paths).map(([type, path]) => {
