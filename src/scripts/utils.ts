@@ -1,4 +1,3 @@
-
 export type IconaDataType = {
   [name: string]: {
     svg: string;
@@ -11,7 +10,7 @@ export type TransformedIconsType = {
   [name: string]: {
     [type: string]: string;
   };
-}
+};
 
 export function toPascalCase(str: string) {
   return str
@@ -37,4 +36,4 @@ export const getSvgInnerHTML = (svgString: string): string | undefined => {
     return svgMatch[1];
   }
   return undefined;
-}
+};

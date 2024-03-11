@@ -1,6 +1,12 @@
 import fs from 'fs';
 import path from 'path';
-import { IconaDataType, TransformedIconsType, getSvgInnerHTML, removeFillAttribute, toPascalCase } from './utils';
+import {
+  IconaDataType,
+  TransformedIconsType,
+  getSvgInnerHTML,
+  removeFillAttribute,
+  toPascalCase,
+} from './utils';
 
 const iconsJsonPath = '.icona/icons.json';
 const outputDirectory = path.resolve('icons/rn');
@@ -15,23 +21,24 @@ const iconsData: IconaDataType = JSON.parse(iconsJsonContent);
 const transformedIcons: TransformedIconsType = {};
 
 Object.values(iconsData).forEach(icon => {
-  const iconNames = icon.name.split('_');
-  const iconType = iconNames.pop() ?? "default";
-  const iconName = iconNames.join('-');
+  const [iconName, iconType] = icon.name.split('_');
   const filename = path.basename(toPascalCase(iconName.split('/')[1]), '.tsx');
   const svgMatch = getSvgInnerHTML(icon.svg);
   if (svgMatch) {
     const svgPath = removeFillAttribute(svgMatch);
-    transformedIcons[filename] = { ...transformedIcons[filename], [iconType]: svgPath };
+    transformedIcons[filename] = {
+      ...transformedIcons[filename],
+      [iconType ?? 'outline']: svgPath,
+    };
   }
 });
 
 Object.entries(transformedIcons).forEach(([name, paths]) => {
   const outputFilePath = path.join(outputDirectory, `${name}Icon.tsx`);
-  const header = `/**\n * ${new Date()}에 자동 생성됨\n */`;
+  const header = `/**\n * 직접 수정 금지 - 스크립트로 자동 생성됨\n */`;
   const stringifiedPaths = Object.entries(paths).map(([type, path]) => {
     return `\n\t"${type}": '${path.replace(/\n/g, '')}'`;
-  })
+  });
 
   try {
     const outputFileContent = `${header}
@@ -49,7 +56,7 @@ const isTokenColorType = (color: any): color is TokenColorsType => {
   return color in colorValues;
 }
 
-const getIconColors = (fill?: IconColorType, stroke?: IconColorType) => {
+const getIconColors = ({ fill, stroke }:{ fill?: IconColorType, stroke?: IconColorType }) => {
   const fillValue = isTokenColorType(fill)
     ? colorValues[fill]
     : Variables.themeColors[fill ?? 'black'];
@@ -72,14 +79,14 @@ const ${name}Icon = (
   } = {},
 ) => {
   const {
-    type = Object.keys(paths)[0] as keyof typeof paths,
+    type = paths["outline"] ? "outline" : Object.keys(paths)[0] as keyof typeof paths,
     width = 24,
     height = 24,
     fill = 'colorBlack',
     stroke,
     strokeWidth = 0,
   } = params;
-  const { fillValue, strokeValue } = getIconColors(fill, stroke);
+  const { fillValue, strokeValue } = getIconColors({fill, stroke});
   const path = paths[type];
 
   return \`<svg 
