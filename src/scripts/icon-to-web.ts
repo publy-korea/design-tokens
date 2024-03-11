@@ -41,7 +41,7 @@ Object.entries(transformedIcons).forEach(([name, paths]) => {
   const outputFilePath = path.join(outputDirectory, `${name}Icon.tsx`);
   const header = `/**\n * 직접 수정 금지 - 스크립트로 자동 생성됨\n */`;
   const stringifiedPaths = Object.entries(paths).map(([type, path]) => {
-    return `\n\t"${type}": ${path.replace(/\n/g, '')}`;
+    return `\n\t'${type}': <g>${path.replace(/\n/g, '')}</g>`;
   });
 
   const outputFileContent = `${header}
@@ -52,7 +52,7 @@ const paths = {${stringifiedPaths.join(',')}
 
 type Props = React.SVGProps<SVGSVGElement> & { type?: keyof typeof paths };
 
-function ${name}Icon({ type = Object.keys(paths)[0] as keyof typeof paths, ...props }: Props) {
+function ${name}Icon({ type = paths['outline'] ? 'outline' : Object.keys(paths)[0] as keyof typeof paths, ...props }: Props) {
   const path = paths[type];
   return (
     <svg

@@ -42,7 +42,7 @@ Object.entries(transformedIcons).forEach(([name, paths]) => {
   const header = `/**\n * 직접 수정 금지 - 스크립트로 자동 생성됨\n */`;
 
   const stringifiedPaths = Object.entries(paths).map(([type, path]) => {
-    return `\n\t"${type}": '${path.replace(/\n/g, '')}'`;
+    return `\n\t'${type}': '<g>${path.replace(/\n/g, '')}</g>'`;
   });
 
   try {
@@ -84,7 +84,7 @@ const ${name}Icon = (
   } = {},
 ) => {
   const {
-    type = paths["outline"] ? "outline" : Object.keys(paths)[0] as keyof typeof paths,
+    type = paths['outline'] ? 'outline' : Object.keys(paths)[0] as keyof typeof paths,
     width = 24,
     height = 24,
     fill = 'colorBlack',
