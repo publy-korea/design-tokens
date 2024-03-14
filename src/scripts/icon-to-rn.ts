@@ -28,7 +28,7 @@ Object.values(iconsData).forEach(icon => {
     const svgPath = removeFillAttribute(svgMatch);
     transformedIcons[filename] = {
       ...transformedIcons[filename],
-      [iconType]: svgPath,
+      [iconType]: toPascalCase(svgPath),
     };
   }
 });

@@ -29,7 +29,7 @@ Object.values(iconsData).forEach(icon => {
     if (!transformedIcons[filename]) {
       transformedIcons[filename] = {};
     }
-    transformedIcons[filename][iconType] = svgPath;
+    transformedIcons[filename][iconType] = toPascalCase(svgPath);
   }
 });
 
