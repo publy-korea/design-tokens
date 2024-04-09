@@ -22,9 +22,9 @@ fs.readdir(iconsDirectory, (err, files) => {
   const filenames = files.map(file => path.basename(file, '.tsx'));
   const outputFilePath = path.join(iconsDirectory, 'index.tsx');
 
-  const outputFileContent = `${filenames
-    .map(filename => `import ${filename} from './${filename}';`)
-    .join('\n')}\n\nexport {\n${filenames.map(filename => `  ${filename},`).join('\n')}\n};\n`;
+  const outputFileContent = filenames
+    .map(filename => `export { default as ${filename} } from './${filename}';`)
+    .join('\n');
 
   fs.writeFileSync(outputFilePath, outputFileContent);
 
